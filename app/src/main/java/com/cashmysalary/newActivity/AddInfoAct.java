@@ -42,7 +42,7 @@ public class AddInfoAct extends AppCompatActivity implements View.OnClickListene
     private boolean isReview;
     private LinearLayout llPrevious;
     private ImageView ivClose;
-
+    /*Inital commit*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
