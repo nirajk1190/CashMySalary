@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_lang"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_100"
+        android:visibility="visible"
+        android:layout_margin="@dimen/dim_30"
+        android:src="@drawable/logo"/>
+
+    <RelativeLayout
+        android:id="@+id/rlFrame"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_250"
+            android:layout_margin="@dimen/dim_12"
+            android:visibility="visible"
+            android:src="@drawable/welcome2"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlFrame"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_24"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/welcome2_txt1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:text="@string/welcome2_txt2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size18" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

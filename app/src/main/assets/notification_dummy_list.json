@@ -1,0 +1,29 @@
+{
+  "fields": [
+    {
+      "notificationId": 0,
+
+      "notificationHeader": "Loan Payment Reminder",
+      "notificationTime": "12.30 PM",
+      "notificationDate": "15 April 2020",
+      "notificationSubContent": "This is a friendly reminder about your Cash My Salary loan payment. Please note, your due amount is Rs. 35000 which is due on May 02, 2020. Please pay on time to improve your credit history.",
+      "isPayBtn": false
+    },
+    {
+      "notificationId": 1,
+      "notificationHeader": "Auto Payment registered successfully",
+      "notificationTime": "02.30 PM",
+      "notificationDate": "18 April 2020",
+      "notificationSubContent": "Auto payment registration is successfully with us. Thanks for using Cash My Salary",
+      "isPayBtn": false
+    },
+    {
+      "notificationId": 2,
+      "notificationHeader": "Auto Debit Payment Reminder",
+      "notificationTime": "03.30 PM",
+      "notificationDate": "30 April 2020",
+      "notificationSubContent": "You Auto debit is scheduled on May 02, 2020 against your loan amount Rs. 35000. So Please keep sufficient balance in your acccount . Please not, any failed payment is counted against your credit history.",
+      "isPayBtn": true
+    }
+  ]
+}

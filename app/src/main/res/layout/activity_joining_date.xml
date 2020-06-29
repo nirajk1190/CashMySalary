@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shadows">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_24"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/joining_date"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_close"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_50"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:layout_marginBottom="@dimen/dim_8"
+        android:background="@drawable/et_background_shape"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDateOfJoining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ivEmail"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_calender"
+            android:background="@null"
+            android:fontFamily="@font/sinkinsanslight"
+            android:hint="@string/hint_employed_since"
+            android:inputType="textPersonName"
+            android:padding="@dimen/dim_12"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_bottom_button" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

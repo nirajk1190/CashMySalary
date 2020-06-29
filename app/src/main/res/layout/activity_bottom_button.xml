@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/llPrevious"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:drawableStart="@drawable/ic_arrow_left"
+            android:fontFamily="@font/audiowide_regular"
+            android:paddingStart="@dimen/dim_24"
+            android:paddingEnd="@dimen/dim_24"
+            android:text="@string/btn_previous_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size14" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="@dimen/dim_1"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:fontFamily="@font/audiowide_regular"
+            android:paddingStart="@dimen/dim_24"
+            android:paddingEnd="@dimen/dim_24"
+            android:text="@string/btn_next_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size14" />
+    </LinearLayout>
+
+
+</LinearLayout>

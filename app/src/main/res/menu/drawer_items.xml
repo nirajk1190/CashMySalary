@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_action_home_black"
+
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/navigation_document"
+            android:visible="false"
+            android:icon="@drawable/action_document"
+            android:title="@string/menu_document" />
+        <item
+            android:id="@+id/navigation_loan"
+            android:icon="@drawable/loan_history"
+            android:title="@string/menu_loan" />
+        <item
+            android:id="@+id/navigation_status"
+            android:icon="@drawable/track_application"
+            android:title="@string/menu_app_status" />
+
+        <item
+            android:id="@+id/navigation_lanuage"
+            android:icon="@drawable/translate"
+            android:title="@string/menu_language" />
+        <item
+            android:id="@+id/navigation_notifications"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/menu_notifications" />
+    </group>
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/navigation_terms"
+                android:icon="@drawable/terms"
+                android:title="@string/menu_terms" />
+
+            <item
+                android:id="@+id/navigation_about"
+                android:icon="@drawable/about"
+                android:title="@string/menu_aboutUs" />
+            <item
+                android:id="@+id/navigation_faq"
+                android:icon="@drawable/frequently_asked_questions"
+                android:title="@string/menu_faq" />
+            <item
+                android:id="@+id/navigation_contact"
+                android:icon="@drawable/headphones"
+                android:title="@string/menu_contactUs" />
+            <item
+                android:id="@+id/navigation_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/menu_logOut" />
+
+        </menu>
+
+
+    </item>
+</menu>

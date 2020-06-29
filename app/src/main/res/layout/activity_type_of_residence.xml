@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shadows">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sinkinsanslight"
+            android:layout_marginStart="@dimen/dim_24"
+            android:justificationMode="inter_word"
+            android:text="@string/header_residence_type"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_side_rounded"
+        android:layout_below="@+id/rlHeader"
+        android:paddingEnd="@dimen/dim_4"
+        android:paddingStart="@dimen/dim_4"
+        android:paddingTop="@dimen/dim_8"
+        android:layout_marginStart="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_12"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dim_50">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_owned_self"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_rented_with_family"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_rented_staying_alone"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_hostel"
+                    android:textSize="@dimen/universal_text_size12" />
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_owned_by_parent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_rented_with_friends"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_paying_guest"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:text="@string/rb_company_provided"
+                    android:textSize="@dimen/universal_text_size12" />
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinnerTOR"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/dim_24"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dim_50"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+        android:fontFamily="@font/sinkinsanslight"
+        android:gravity="center_vertical"
+        android:hint="@string/select_residence_type"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="@dimen/universal_text_size14"
+        app:met_floatingLabel="normal" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_bottom_button" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

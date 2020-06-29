@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/dim_150"
+            android:layout_height="@dimen/dim_100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_24"
+            android:src="@drawable/rejected" />
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_24"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:text="@string/reject_heading"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size16" />
+
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeading"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_12"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:text="@string/reject_sorry_msg"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+
+        <TextView
+            android:id="@+id/tvHeadingDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubHeading"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_34"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:text="@string/reject_days"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="@dimen/dim_100"
+            android:layout_height="@dimen/dim_0.5"
+            android:layout_below="@+id/tvHeadingDays"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_24"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:text="@string/reject_possible_reason"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size16" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_12"
+            android:layout_below="@+id/tvReason" />
+
+    </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/app_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnNext"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlReferenceHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/shadows"
+                android:paddingLeft="@dimen/dim_8"
+                android:paddingTop="@dimen/dim_12"
+                android:paddingEnd="@dimen/dim_8"
+                android:paddingBottom="@dimen/dim_8"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:justificationMode="inter_word"
+                    android:text="@string/header_reference"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/universal_text_size12" />
+
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlReferenceOne"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/rlReferenceHeader"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlRelation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_12"
+                        android:layout_marginRight="@dimen/dim_8"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvRelation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/header_relation"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/spinnerRelation"
+                            android:layout_width="fill_parent"
+                            android:textSize="@dimen/universal_text_size14"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvRelation"
+                            android:gravity="center_vertical"
+                            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:hint="@string/select_relationship"
+                            android:textColorHint="@color/colorAccent"
+                            app:met_floatingLabel="normal" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlRelation"
+                        android:layout_margin="@dimen/dim_8"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/header_name"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+
+                            <EditText
+                                android:id="@+id/etName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvName"
+                                android:layout_marginTop="@dimen/dim_8"
+                                android:layout_toLeftOf="@+id/btnGenerateOTP"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:hint="@string/hint_name"
+                                android:paddingStart="@dimen/dim_0"
+                                android:textSize="@dimen/universal_text_size14" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlName"
+                        android:layout_margin="@dimen/dim_8"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/header_mobile"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlMobileContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvMobile"
+                            android:layout_marginTop="@dimen/dim_8">
+
+                            <EditText
+                                android:id="@+id/etMobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_contact_phone_black_24dp"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:hint="@string/hint_mobile"
+                                android:paddingStart="@dimen/dim_0"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlReferenceTwo"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/rlReferenceOne"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlRelation1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_12"
+                        android:layout_marginRight="@dimen/dim_8"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvRelation1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/header_relation1"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/spinnerRelation1"
+                            android:layout_width="fill_parent"
+                            android:textSize="@dimen/universal_text_size14"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvRelation1"
+                            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/select_relationship"
+                            android:textColorHint="@color/colorAccent"
+                            app:met_floatingLabel="normal" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlRelation1"
+                        android:layout_margin="@dimen/dim_8"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/header_name1"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+
+                            <EditText
+                                android:id="@+id/etName1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dim_8"
+                                android:layout_below="@+id/tvName1"
+                                android:layout_marginTop="@dimen/dim_8"
+                                android:layout_toLeftOf="@+id/btnGenerateOTP"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:hint="@string/hint_name"
+                                android:paddingStart="@dimen/dim_0"
+                                android:textSize="@dimen/universal_text_size14" />
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlMobile1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlName1"
+                        android:layout_margin="@dimen/dim_8"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvMobile1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/header_mobile1"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlMobileContent1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvMobile1"
+                            android:layout_marginTop="@dimen/dim_8">
+
+                            <EditText
+                                android:id="@+id/etMobile1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_contact_phone_black_24dp"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:hint="@string/hint_mobile"
+                                android:paddingStart="@dimen/dim_0"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/audiowide_regular"
+        android:paddingStart="@dimen/dim_24"
+        android:paddingEnd="@dimen/dim_24"
+        android:text="@string/btn_next_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/universal_text_size12" />
+</RelativeLayout>

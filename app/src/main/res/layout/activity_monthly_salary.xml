@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shadows">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_24"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/monthly_salary_header"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_close"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMonthlySalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:drawableStart="@drawable/rupee"
+        android:drawablePadding="@dimen/dim_8"
+        android:lineSpacingExtra="@dimen/dim_6"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_50"
+        android:fontFamily="@font/sinkinsanslight"
+        android:hint="@string/hint_monthly_salary"
+        android:paddingStart="@dimen/dim_0"
+        android:textSize="@dimen/universal_text_size14" />
+
+    <RelativeLayout
+        android:id="@+id/rlSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/etMonthlySalary"
+        android:layout_marginTop="@dimen/dim_24"
+        android:layout_marginEnd="@dimen/dim_12"
+        android:layout_marginStart="@dimen/dim_12"
+        android:orientation="horizontal">
+
+        <vn.nms.dynamic_seekbar.DynamicSeekBarView
+            android:id="@+id/sbSalary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_30"
+            app:dsbv_isHideInfo="true"
+            android:layout_below="@+id/tvLoanAmttxt"
+            app:dsbv_max="100"
+            app:dsbv_progress="50"
+            app:dsbv_progressBackgroundColor="@color/colorAccent"
+            app:dsbv_progressColor="@color/light_green"
+            app:dsbv_thumbDrawable="@drawable/seek_icon" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/rlSeekbar"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:layout_marginStart="@dimen/dim_24">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_4"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="start"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:text="₹ 0"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/dim_4"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="right"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:text="₹ 100000"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size16" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_bottom_button" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

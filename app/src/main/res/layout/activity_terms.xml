@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_above="@+id/rlBottom"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar1"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dim_8"
+        android:layout_marginRight="@dimen/dim_8">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:fontFamily="@font/sinkinsanslight"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_4"
+                android:paddingStart="@dimen/dim_4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <TextView
+                android:id="@+id/tvAgreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_toEndOf="@+id/cbTerms"
+                android:fontFamily="@font/sinkinsanslight"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:text="@string/agreement_confirm_text"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginBottom="@dimen/dim_4"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="true"
+            android:fontFamily="@font/audiowide_regular"
+            android:text="@string/btn_agree"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size14" />
+    </RelativeLayout>
+
+</RelativeLayout>

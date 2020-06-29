@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_above="@+id/btnSubmit"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlMainBulletPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/appeal_heading"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <TextView
+                    android:id="@+id/tvBulletOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHeader"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/text_bullet_one"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <TextView
+                    android:id="@+id/tvBulletTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvBulletOne"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_marginBottom="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/text_bullet_two"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/universal_text_size12" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlMainBulletPoint"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:layout_marginBottom="@dimen/dim_8"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:text="@string/appeal_note"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tvNote"
+                android:background="@drawable/button_background_border"
+                android:layout_marginTop="@dimen/dim_12"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:drawableStart="@drawable/ic_warning_black_24dp"
+                android:drawablePadding="@dimen/dim_8"
+                android:fontFamily="@font/sinkinsans600semibold"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:text="@string/warning_txt"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <TextView
+                android:id="@+id/tvWarningOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWarning"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_12"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:text="@string/warning_msg_one"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <TextView
+                android:id="@+id/tvWarningTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWarningOne"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_marginTop="@dimen/dim_12"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:layout_marginBottom="@dimen/dim_8"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:text="@string/warning_msg_two"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_100"
+                android:layout_below="@+id/cvAppeal" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_4"
+        android:backgroundTint="@color/colorPrimary"
+        android:enabled="true"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="@string/appeal_submit_txt"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/universal_text_size14" />
+
+</RelativeLayout>

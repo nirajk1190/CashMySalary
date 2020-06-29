@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_shape"
+            android:paddingBottom="@dimen/dim_24">
+
+            <com.vaibhavlakhera.circularprogressview.CircularProgressView
+                android:id="@+id/progressView"
+                android:layout_width="@dimen/dim_150"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_20"
+                app:animate="true"
+                app:animateDuration="600"
+                app:fillColor="@color/white"
+                app:progress="1"
+                app:progressColor="@color/light_green"
+                app:progressRoundCap="true"
+                app:progressTextColor="@color/colorAccent"
+                app:progressTextEnabled="true"
+                app:progressTextSize="32sp"
+                app:progressTextType="percent"
+                app:progressWidth="@dimen/dim_12"
+                app:startAngle="270"
+                app:total="100"
+                app:totalColor="@color/colorNavIcon"
+                app:totalWidth="@dimen/dim_12" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dim_12"
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

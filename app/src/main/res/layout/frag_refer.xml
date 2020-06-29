@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dim_16"
+            android:paddingBottom="@dimen/dim_16"
+            android:background="@drawable/my_shape">
+
+            <ImageView
+                android:id="@+id/ivRefer"
+                android:layout_width="@dimen/dim_100"
+                android:layout_height="@dimen/dim_100"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/refer"/>
+
+
+            <TextView
+                android:id="@+id/tvReferSubHeading"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dim_24"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_below="@+id/ivRefer"
+                android:lineSpacingExtra="@dimen/dim_4"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:fontFamily="@font/sinkinsanslight"
+                android:justificationMode="inter_word"
+                android:text="@string/refer_sub_heading"
+                android:textColor="@color/white"
+                android:textSize="@dimen/universal_text_size12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvReferCodeHeading"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12"
+                android:lineSpacingExtra="@dimen/dim_4"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:fontFamily="@font/sinkinsanslight"
+                android:justificationMode="inter_word"
+                android:text="@string/referral_code_heading"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:layout_below="@+id/tvReferCodeHeading"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/line_border"
+                        android:padding="@dimen/dim_8"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvReferCode"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="@dimen/dim_4"
+                            android:fontFamily="@font/sinkinsans600semibold"
+                            android:justificationMode="inter_word"
+                            android:text="@string/referral_code"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size16" />
+
+                        <TextView
+                            android:id="@+id/tvClickCopy"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_alignParentEnd="true"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="@dimen/dim_4"
+                            android:fontFamily="@font/sinkinsans600semibold"
+                            android:justificationMode="inter_word"
+                            android:text="@string/click_to_copy"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlShare"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/button_background_fill_border"
+                    android:padding="@dimen/dim_8"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvShare"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingEnd="@dimen/dim_8"
+                        android:paddingStart="@dimen/dim_8"
+                        android:drawableStart="@drawable/ic_share_white_24dp"
+                        android:lineSpacingExtra="@dimen/dim_4"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/share_txt"
+                        android:drawablePadding="@dimen/dim_8"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_32"
+            android:paddingBottom="@dimen/dim_16"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvShareVia"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12"
+                android:lineSpacingExtra="@dimen/dim_4"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:fontFamily="@font/sinkinsanslight"
+                android:justificationMode="inter_word"
+                android:text="@string/share_via_txt"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_marginEnd="@dimen/dim_12"
+                android:layout_below="@+id/tvShareVia"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dim_12"
+                        android:background="@drawable/circular_button"
+                        android:src="@drawable/email" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:lineSpacingExtra="@dimen/dim_4"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/email"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dim_12"
+                        android:background="@drawable/circular_button"
+                        android:src="@drawable/message" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:lineSpacingExtra="@dimen/dim_4"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/message"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnWhatsApp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dim_12"
+                        android:background="@drawable/circular_button"
+                        android:src="@drawable/whatsapp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:lineSpacingExtra="@dimen/dim_4"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/whatsapp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnMessenger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dim_12"
+                        android:background="@drawable/circular_button"
+                        android:src="@drawable/messanger" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:lineSpacingExtra="@dimen/dim_4"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/messanger"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

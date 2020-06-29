@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shadows">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dim_24"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/header_basic_info"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:src="@drawable/ic_close" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_24"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLinkedIn"
+            android:fontFamily="@font/sinkinsanslight"
+            android:hint="@string/hint_first_name"
+            android:paddingStart="@dimen/dim_0"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLinkedIn"
+            android:fontFamily="@font/sinkinsanslight"
+            android:layout_marginTop="@dimen/dim_12"
+            android:hint="@string/hint_middle_name"
+            android:paddingStart="@dimen/dim_0"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_12"
+            android:fontFamily="@font/sinkinsanslight"
+            android:hint="@string/hint_last_name"
+            android:paddingStart="@dimen/dim_0"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etdob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_12"
+            android:focusable="false"
+            android:clickable="true"
+            android:fontFamily="@font/sinkinsanslight"
+            android:hint="@string/hint_dob"
+            android:drawableEnd="@drawable/ic_calender"
+            android:drawablePadding="@dimen/dim_8"
+            android:paddingStart="@dimen/dim_0"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sinkinsanslight"
+            android:layout_marginTop="@dimen/dim_12"
+            android:justificationMode="inter_word"
+            android:text="@string/header_gender"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGender"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="@dimen/dim_8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rvMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"
+                android:fontFamily="@font/sinkinsanslight"
+                android:text="@string/male"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <RadioButton
+                android:id="@+id/rvFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimary"
+                android:fontFamily="@font/sinkinsanslight"
+                android:text="@string/female"
+                android:textSize="@dimen/universal_text_size12" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvMarital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sinkinsanslight"
+            android:layout_marginTop="@dimen/dim_12"
+            android:justificationMode="inter_word"
+            android:text="@string/header_marital"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+        <RadioGroup
+            android:id="@+id/rgMarital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMarital"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="@dimen/dim_8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rvMarried"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"
+                android:fontFamily="@font/sinkinsanslight"
+                android:text="@string/married"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <RadioButton
+                android:id="@+id/rvUnmarried"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimary"
+                android:fontFamily="@font/sinkinsanslight"
+                android:text="@string/unmarried"
+                android:textSize="@dimen/universal_text_size12" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_bottom_button" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

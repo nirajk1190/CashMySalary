@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorNavigationItem" format="color" />
+    <attr name="colorNavigationItemSelected" format="color" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="drawableNavigationItemBackground" format="reference" />
+    <declare-styleable name="CustomTextView">
+        <attr name="typeface" format="string" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_Layout">
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles areused for button bars depending on the API level.?android:attr/buttonBarStyle is new as of API 11 so this isnecessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="GIFView"><attr name="src" format="reference" /></declare-styleable>-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomBottomSheetBehavior">
+        <attr name="anchorPoint" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FabWithLabelView">
+        <attr name="android:src" />
+        <attr name="srcCompat" />
+        <attr name="fabLabel" format="string" />
+        <attr name="fabBackgroundColor" format="color" />
+        <attr name="fabLabelColor" format="color" />
+        <attr name="fabLabelBackgroundColor" format="color" />
+        <attr name="fabLabelClickable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SpeedDialView">
+        <attr name="sdExpansionMode" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+        <attr name="sdMainFabAnimationRotateAngle" format="float" />
+        <attr name="sdMainFabClosedSrc" format="reference" />
+        <attr name="sdMainFabClosedBackgroundColor" format="color" />
+        <attr name="sdMainFabOpenedSrc" format="reference" />
+        <attr name="sdMainFabOpenedBackgroundColor" format="color" />
+        <attr name="sdOverlayLayout" format="reference" />
+        <attr name="sdUseReverseAnimationOnClose" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SpeedDialOverlayLayout">
+        <attr name="clickable_overlay" format="boolean" />
+        <attr name="android:background" />
+    </declare-styleable>
+    <declare-styleable name="MaterialProgressBar">
+        <attr name="inner_radius" format="dimension" />
+        <attr name="background_color" format="color" />
+        <attr name="progress_color" format="color" />
+        <attr name="progress_stoke_width" format="dimension" />
+        <attr name="show_arrow" format="boolean" />
+        <attr name="enable_circle_background" format="boolean" />
+        <attr name="arrow_width" format="dimension" />
+        <attr name="arrow_height" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <!--<attr name="mlpb_progress_text_offset" format="dimension"/>-->
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SwipeLayout">
+        <attr name="swipeDirection" format="integer">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+        <attr name="isEnabledSwipe" format="boolean" />
+        <attr name="isFreeDragAfterOpen" format="boolean" />
+        <attr name="isFreeHorizontalDrag" format="boolean" />
+        <attr name="isContinuousSwipe" format="boolean" />
+        <attr name="isTogether" format="boolean" />
+        <attr name="rightItem" format="reference" />
+        <attr name="leftItem" format="reference" />
+        <attr name="draggedItem" format="reference" />
+        <attr name="autoMovingSensitivity" format="integer" />
+        <attr name="rightDragViewPadding" format="dimension" />
+        <attr name="leftDragViewPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+</resources>

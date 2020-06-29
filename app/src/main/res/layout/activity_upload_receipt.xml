@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_above="@+id/btnSubmit"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlMainBulletPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/mandatory_txt"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <EditText
+                    android:id="@+id/etPaymentDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHeader"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:drawableEnd="@drawable/ic_calender"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:hint="@string/payment_date_hint"
+                    android:paddingStart="@dimen/dim_0"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spinnerRepaymentChannel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:layout_below="@+id/etPaymentDate"
+                    android:textSize="@dimen/universal_text_size12"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/repayment_channel"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    app:met_floatingLabel="normal" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spinnerRepaymentIssue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:layout_below="@+id/spinnerRepaymentChannel"
+                    android:textSize="@dimen/universal_text_size12"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/repayment_issue"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    app:met_floatingLabel="normal" />
+
+                <EditText
+                    android:id="@+id/etTransactionId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerRepaymentIssue"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:hint="@string/transaction_id"
+                    android:paddingStart="@dimen/dim_0"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <TextView
+                    android:id="@+id/tvCharacters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/etTransactionId"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/characters"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RelativeLayout
+                    android:id="@+id/rlPaymentProof"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/tvCharacters"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sinkinsans600semibold"
+                        android:justificationMode="inter_word"
+                        android:text="@string/repayment_proof"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/etPaymentProof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlPaymentProof"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:drawableEnd="@drawable/ic_file_upload_black_24dp"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:hint="@string/repayment_proof_hint"
+                    android:paddingStart="@dimen/dim_0"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <TextView
+                    android:id="@+id/tvRemarksHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etPaymentProof"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:fontFamily="@font/sinkinsans600semibold"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/remarks"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RelativeLayout
+                    android:id="@+id/rlContentRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:paddingBottom="@dimen/dim_8"
+                    android:layout_below="@+id/tvRemarksHeader"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/etRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_100"
+                        android:layout_marginStart="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginEnd="@dimen/dim_8"
+                        android:lineSpacingExtra="@dimen/dim_6"
+                        android:gravity="top|center_vertical"
+                        android:background="@null"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:hint="@string/remarks_hint"
+                        android:paddingStart="@dimen/dim_0"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <TextView
+                        android:id="@+id/tvRemarksCharacters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/etRemarks"
+                        android:layout_marginEnd="@dimen/dim_8"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:gravity="center_vertical"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="@dimen/dim_6"
+                        android:text="@string/remarks_characters"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_100"
+                android:layout_below="@+id/rlMainBulletPoint" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_4"
+        android:backgroundTint="@color/colorPrimary"
+        android:enabled="true"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="@string/receipt_submit_txt"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/universal_text_size14" />
+
+</RelativeLayout>

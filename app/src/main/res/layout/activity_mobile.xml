@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_150"
+            android:layout_marginTop="@dimen/dim_32"
+            android:src="@drawable/otp" />
+
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginStart="@dimen/dim_32"
+            android:layout_marginEnd="@dimen/dim_32"
+            android:layout_marginBottom="@dimen/dim_16"
+            android:fontFamily="@font/sinkinsanslight"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_8"
+            android:text="@string/heading_login_with_subheading"
+            android:textColor="@color/black"
+            android:textSize="@dimen/universal_text_size12" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubHeading"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dim_24">
+
+            <com.cashmysalary.util.PrefixEditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_12"
+                android:layout_marginRight="@dimen/dim_12"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="bottom"
+                android:hint="@string/et_phone_hint"
+                android:tag="+91 "
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/shadows"
+                android:textSize="@dimen/universal_text_size14" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etMobileNumber"
+                android:layout_marginLeft="@dimen/dim_12"
+                android:layout_marginTop="@dimen/dim_32"
+                android:layout_marginRight="@dimen/dim_12">
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:fontFamily="@font/titilliumwebregular"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvAccept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/cbAccept"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:gravity="center_vertical"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="@dimen/dim_4"
+                        android:text="@string/accept_text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/universal_text_size12" />
+
+
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl1"
+                    android:layout_margin="@dimen/dim_4"
+                    android:backgroundTint="@color/shadows"
+                    android:enabled="false"
+                    android:fontFamily="@font/audiowide_regular"
+                    android:text="@string/btn_generate_otp_text"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/universal_text_size14" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

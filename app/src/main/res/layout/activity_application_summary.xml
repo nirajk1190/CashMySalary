@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_8"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/personalContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_margin="@dimen/dim_2"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/dim_4"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlPersonalHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim_12">
+
+                        <ImageView
+                            android:id="@+id/ivPersonalHeading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_personal_info" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_toEndOf="@+id/ivPersonalHeading"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/pesonal_act_toolbar_title"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size14" />
+
+                        <ImageView
+                            android:id="@+id/ivPersonalEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/personalBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_0.5"
+                        android:layout_below="@+id/rlPersonalHeader"
+                        android:layout_margin="@dimen/dim_8"
+                        android:background="@color/shadows" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlPersonalDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/personalBorder"
+                        android:layout_marginStart="@dimen/dim_12"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginEnd="@dimen/dim_12"
+                        android:layout_marginBottom="@dimen/dim_12">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvApplicantName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Niraj Kumar"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvDateOfBirth"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="18-07-1992"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvGender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="MALE"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvMarital"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Married"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvEducation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Graduate"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvSelfie"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Selfie"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvAdhaarProof"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Aadhaar Card (Front and Back)"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvPanCard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="PAN Card"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/residenceContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_12"
+                android:visibility="visible"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/dim_4"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlResidence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim_12">
+
+                        <ImageView
+                            android:id="@+id/ivResidence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_residence" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_toEndOf="@+id/ivResidence"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/residence_act_toolbar_title"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size14" />
+
+                        <ImageView
+                            android:id="@+id/ivResidenceEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/ResidenceBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_0.5"
+                        android:layout_below="@+id/rlResidence"
+                        android:layout_margin="@dimen/dim_8"
+                        android:background="@color/shadows" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlResidenceDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ResidenceBorder"
+                        android:layout_marginStart="@dimen/dim_12"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginEnd="@dimen/dim_12"
+                        android:layout_marginBottom="@dimen/dim_12">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvResidenceType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Rented-With Family"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvResidenceAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toStartOf="@+id/ivAddress"
+                                    android:layout_marginEnd="@dimen/dim_8"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:lineSpacingExtra="@dimen/dim_6"
+                                    android:text="H2/40, Bengali Colony, Mahavir Enclave, New Delhi-110045"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:id="@+id/ivAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvResidenceProof"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Residence Proof"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/employmentContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/dim_12"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/dim_4"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlEmployment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim_12">
+
+                        <ImageView
+                            android:id="@+id/ivEmployment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_work_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_toEndOf="@+id/ivEmployment"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/employment_info_toolbar_title"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size14" />
+
+                        <ImageView
+                            android:id="@+id/ivEmploymentEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/employmentBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_0.5"
+                        android:layout_below="@+id/rlEmployment"
+                        android:layout_margin="@dimen/dim_8"
+                        android:background="@color/shadows" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlEmploymentDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/employmentBorder"
+                        android:layout_marginStart="@dimen/dim_12"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginEnd="@dimen/dim_12"
+                        android:layout_marginBottom="@dimen/dim_12">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvEmploymentType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Salaried"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvCompanyName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:lineSpacingExtra="@dimen/dim_6"
+                                    android:text="CASH MY SALARY"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvJoiningDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="25-March-2020"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvDesignation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Sr. Software Developer"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvOfficeEmail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="niraj@cashmysalary.com"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvOfficeAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/dim_8"
+                                    android:layout_toStartOf="@+id/ivResidenceCheck"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="3rd Floor, 385/3 Opposite Corporation Bank, 100 Feet Rd, Ghitorni, New Delhi, Delhi 110030"
+                                    android:textColor="@color/colorAccent"
+                                    android:lineSpacingExtra="@dimen/dim_6"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:id="@+id/ivResidenceCheck"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bankDetailsContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/dim_12"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/dim_4"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlBankDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim_12">
+
+                        <ImageView
+                            android:id="@+id/ivBankDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_bank_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_toEndOf="@+id/ivBankDetail"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/bank_details_heading"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size14" />
+
+                        <ImageView
+                            android:id="@+id/ivBankEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/bankDetailsBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_0.5"
+                        android:layout_below="@+id/rlBankDetail"
+                        android:layout_margin="@dimen/dim_8"
+                        android:background="@color/shadows" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlBankDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bankDetailsBorder"
+                        android:layout_marginStart="@dimen/dim_12"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginEnd="@dimen/dim_12"
+                        android:layout_marginBottom="@dimen/dim_12">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Niraj Kumar"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvBankAccount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:lineSpacingExtra="@dimen/dim_6"
+                                    android:text="53510895845"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvBankIFSCCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="SCBL0036041"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvUpi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="9555517491@scb"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvCheque"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="Cheque"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addiContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/dim_12"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/dim_4"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlAdditionalDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim_12">
+
+                        <ImageView
+                            android:id="@+id/ivAdditionalDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_addional_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dim_12"
+                            android:layout_toEndOf="@+id/ivAdditionalDetail"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/additional_info_toolbar_title"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size14" />
+
+                        <ImageView
+                            android:id="@+id/ivAdditionalEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/oval_shape"
+                            android:padding="@dimen/dim_8"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/additionalBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_0.5"
+                        android:layout_below="@+id/rlAdditionalDetail"
+                        android:layout_margin="@dimen/dim_8"
+                        android:background="@color/shadows" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlAdditionalDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/additionalBorder"
+                        android:layout_marginStart="@dimen/dim_12"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginEnd="@dimen/dim_12"
+                        android:layout_marginBottom="@dimen/dim_12">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvLinkedIn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="https://www.linkedin.com"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvFacebook"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:lineSpacingExtra="@dimen/dim_6"
+                                    android:text="https://www.facebook.com"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvVehicle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="None"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_8">
+
+                                <TextView
+                                    android:id="@+id/tvRc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="RC Copy"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size12" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_check_circle_green_24dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/audiowide_regular"
+        android:paddingStart="@dimen/dim_24"
+        android:paddingEnd="@dimen/dim_24"
+        android:text="@string/btn_submit_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/universal_text_size14" />
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_100"
+            android:background="@drawable/gradient_background"
+            android:orientation="vertical"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/dim_12"
+            card_view:cardPreventCornerOverlap="false"
+            android:layout_marginTop="@dimen/dim_50"
+            android:elevation="@dimen/dim_0"
+            android:layout_marginEnd="@dimen/dim_12">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dim_8"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/dim_150"
+                    android:layout_height="@dimen/dim_100"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dim_24"
+                    android:src="@drawable/review" />
+
+                <TextView
+                    android:id="@+id/tvUnderReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginStart="@dimen/dim_12"
+                    android:layout_marginTop="@dimen/dim_24"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/sinkinsans600semibold"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:text="@string/under_review"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size16" />
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_12"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_below="@+id/tvUnderReview"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:justificationMode="inter_word"
+                    android:text="@string/happen_next"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <TextView
+                    android:id="@+id/tvNote1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_12"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:layout_below="@+id/tvNote"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:justificationMode="inter_word"
+                    android:text="@string/happen_next1"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</LinearLayout>

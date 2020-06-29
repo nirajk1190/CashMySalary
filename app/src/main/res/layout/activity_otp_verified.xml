@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:id="@+id/rlLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_12">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/dim_100"
+                android:layout_height="@dimen/dim_100"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dim_12"
+                android:src="@drawable/smart" />
+
+
+            <TextView
+                android:id="@+id/tvSubContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginLeft="@dimen/dim_12"
+                android:layout_marginTop="@dimen/dim_24"
+                android:layout_marginRight="@dimen/dim_12"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_8"
+                android:text="@string/mobile_number_verified_text"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <TextView
+                android:id="@+id/tvMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSubContent"
+                android:layout_marginLeft="@dimen/dim_12"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginRight="@dimen/dim_12"
+                android:fontFamily="@font/sinkinsanslight"
+                android:layout_centerHorizontal="true"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="@dimen/dim_8"
+                android:text=""
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:src="@drawable/ic_check_circle_green_24dp"
+                android:layout_below="@+id/tvSubContent"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_toEndOf="@+id/tvMobile"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_8"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:enabled="true"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="@string/btn_got_it"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/universal_text_size14" />
+
+
+
+</RelativeLayout>

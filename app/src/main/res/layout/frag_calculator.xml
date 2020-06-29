@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/mainContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginLeft="@dimen/dim_12"
+                        android:layout_marginRight="@dimen/dim_12"
+                        android:layout_gravity="center"
+                        app:cardElevation="@dimen/dim_2"
+                        card_view:cardCornerRadius="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvLoanAmt"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_12"
+                                android:layout_marginLeft="@dimen/dim_8"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:justificationMode="inter_word"
+                                android:text="@string/loan_amount"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                            <TextView
+                                android:id="@+id/tvLoanAmttxt"
+                                android:layout_width="match_parent"
+                                android:gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvLoanAmt"
+                                android:layout_marginTop="@dimen/dim_8"
+                                android:fontFamily="@font/sinkinsans600semibold"
+                                android:justificationMode="inter_word"
+                                android:text="@string/loan_amount_txt"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size16" />
+
+                            <vn.nms.dynamic_seekbar.DynamicSeekBarView
+                                android:id="@+id/loanAmtSeekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dim_30"
+                                android:layout_margin="@dimen/dim_8"
+                                app:dsbv_isHideInfo="true"
+                                android:layout_below="@+id/tvLoanAmttxt"
+                                app:dsbv_max="100"
+                                app:dsbv_progress="50"
+                                app:dsbv_progressBackgroundColor="@color/colorAccent"
+                                app:dsbv_progressColor="@color/light_green"
+                                app:dsbv_thumbDrawable="@drawable/seek_icon" />
+
+                            <TextView
+                                android:id="@+id/tvLoanTenure"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_12"
+                                android:layout_below="@+id/loanAmtSeekbar"
+                                android:layout_marginLeft="@dimen/dim_8"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:justificationMode="inter_word"
+                                android:text="@string/loan_tenure"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                            <TextView
+                                android:id="@+id/tvLoanTenuretxt"
+                                android:layout_width="match_parent"
+                                android:gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvLoanTenure"
+                                android:layout_marginTop="@dimen/dim_8"
+                                android:fontFamily="@font/sinkinsans600semibold"
+                                android:justificationMode="inter_word"
+                                android:text="@string/loan_tenure_txt"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size16" />
+
+                            <vn.nms.dynamic_seekbar.DynamicSeekBarView
+                                android:id="@+id/loanTenureSeekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dim_30"
+                                android:layout_marginTop="@dimen/dim_8"
+                                android:layout_marginRight="@dimen/dim_8"
+                                android:layout_marginLeft="@dimen/dim_8"
+                                android:layout_marginBottom="@dimen/dim_12"
+                                app:dsbv_isHideInfo="true"
+                                android:layout_below="@+id/tvLoanTenuretxt"
+                                app:dsbv_max="100"
+                                app:dsbv_progress="50"
+                                app:dsbv_progressBackgroundColor="@color/colorAccent"
+                                app:dsbv_progressColor="@color/light_green"
+                                app:dsbv_thumbDrawable="@drawable/seek_icon" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlPurpose"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/loanTenureSeekbar"
+                                android:layout_margin="@dimen/dim_8"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/tvPurpose"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:justificationMode="inter_word"
+                                    android:text="@string/header_loan_purpose"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/universal_text_size14" />
+
+                                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                    android:id="@+id/spinnerEducation"
+                                    android:layout_width="fill_parent"
+                                    android:fontFamily="@font/sinkinsanslight"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/universal_text_size14"
+                                    android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                                    android:layout_below="@+id/tvPurpose"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="@dimen/dim_0"
+                                    android:hint="@string/select_loan_purpose"
+                                    android:textColorHint="@color/colorPrimary"
+                                    app:met_floatingLabel="normal" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/repaymentCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_24"
+                        android:layout_marginLeft="@dimen/dim_12"
+                        android:layout_marginRight="@dimen/dim_12"
+                        android:layout_gravity="center"
+                        app:cardElevation="@dimen/dim_2"
+                        card_view:cardCornerRadius="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvRepayment"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_12"
+                                android:layout_marginLeft="@dimen/dim_8"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:justificationMode="inter_word"
+                                android:text="@string/loan_amount_applied"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                            <TextView
+                                android:id="@+id/tvAmt"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/dim_8"
+                                android:layout_marginTop="@dimen/dim_8"
+                                android:fontFamily="@font/sinkinsans600semibold"
+                                android:justificationMode="inter_word"
+                                android:text="@string/loan_amount_txt"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                            <TextView
+                                android:id="@+id/tvTenureHeading"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_12"
+                                android:layout_below="@+id/tvRepayment"
+                                android:layout_marginLeft="@dimen/dim_8"
+                                android:fontFamily="@font/sinkinsanslight"
+                                android:justificationMode="inter_word"
+                                android:text="@string/tenure"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                            <TextView
+                                android:id="@+id/tvTenureValue"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_below="@+id/tvRepayment"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/dim_8"
+                                android:layout_marginBottom="@dimen/dim_12"
+                                android:layout_marginTop="@dimen/dim_12"
+                                android:fontFamily="@font/sinkinsans600semibold"
+                                android:justificationMode="inter_word"
+                                android:text="@string/loan_tenure_txt"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/universal_text_size14" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dim_4"
+                                android:layout_marginTop="@dimen/dim_8"
+                                android:layout_below="@+id/tvTenureHeading"
+                                android:background="@drawable/repayment_yellowbox"
+                                android:layout_alignParentBottom="true"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlBottom"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/mainContent"
+                    android:layout_marginTop="@dimen/dim_24"
+                    android:layout_marginLeft="@dimen/dim_12"
+                    android:layout_marginRight="@dimen/dim_12"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/cbTerms"
+                            android:layout_marginStart="-5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/accept_text"
+                            android:paddingStart="@dimen/dim_4"
+                            android:textSize="@dimen/universal_text_size12"
+                            android:lineSpacingExtra="@dimen/dim_4"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:buttonTint="@color/colorPrimary"
+                            android:justificationMode="inter_word"
+                            android:textColor="@color/black" />
+
+
+
+                        <CheckBox
+                            android:id="@+id/cbAuthorize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/authorize_text"
+                            android:layout_marginTop = "@dimen/dim_8"
+                            android:layout_below="@+id/cbTerms"
+                            android:layout_marginStart="-5dp"
+                            android:paddingStart="@dimen/dim_4"
+                            android:textSize="@dimen/universal_text_size12"
+                            android:lineSpacingExtra="@dimen/dim_4"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:buttonTint="@color/colorPrimary"
+                            android:justificationMode="inter_word"
+                            android:textColor="@color/black" />
+
+
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnApply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:layout_below="@+id/rl1"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginStart="@dimen/dim_4"
+                        android:layout_marginBottom="@dimen/dim_4"
+                        android:layout_marginEnd="@dimen/dim_4"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/audiowide_regular"
+                        android:text="@string/btn_apply_now_text"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/universal_text_size14"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

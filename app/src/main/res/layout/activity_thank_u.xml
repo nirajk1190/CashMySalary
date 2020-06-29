@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/app_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/app_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/dim_150"
+            android:layout_height="@dimen/dim_100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_24"
+            android:src="@drawable/thanks" />
+
+        <TextView
+            android:id="@+id/tvThanku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_24"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:layout_below="@+id/logo"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:text="@string/thank_u_txt"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size16" />
+
+        <TextView
+            android:id="@+id/tvLastStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_8"
+            android:layout_below="@+id/tvThanku"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/last_step_txt"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_background"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:theme="@style/ToolbarBackArrow"
+                app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/dim_160"
+            android:layout_height="@dimen/dim_160"
+            android:layout_below="@+id/appBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_12"
+            android:padding="@dimen/dim_16"
+            android:src="@drawable/change_language" />
+
+        <TextView
+            android:id="@+id/tvHeaderLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_12"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:text="@string/choose_pereferred_language"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size16" />
+
+        <RelativeLayout
+            android:id="@+id/rlEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeaderLanguage"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_24"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_marginBottom="@dimen/dim_12"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rbEnglish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="true"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sinkinsanslight"
+                android:layoutDirection="rtl"
+                android:text="@string/btn_eng_text"
+                android:textSize="@dimen/universal_text_size14" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_0.5"
+            android:layout_below="@+id/rlEnglish"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:background="@color/colorAccent" />
+
+        <RelativeLayout
+            android:id="@+id/rlHindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_marginStart="@dimen/dim_12"
+            android:layout_marginTop="@dimen/dim_12"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_marginBottom="@dimen/dim_12"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rbHindi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sinkinsanslight"
+                android:layoutDirection="rtl"
+                android:text="@string/btn_hindi_text"
+                android:textSize="@dimen/universal_text_size14" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_0.5"
+            android:layout_below="@+id/rlHindi"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:background="@color/colorAccent" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_4"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:enabled="true"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="@string/btn_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/universal_text_size14" />
+
+</RelativeLayout>

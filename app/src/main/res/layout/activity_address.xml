@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shadows">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sinkinsanslight"
+            android:layout_marginStart="@dimen/dim_24"
+            android:justificationMode="inter_word"
+            android:text="@string/address_header"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:src="@drawable/ic_close" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etFlatNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_24"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:fontFamily="@font/sinkinsanslight"
+        android:hint="@string/hint_flat_no"
+        android:lineSpacingExtra="@dimen/dim_6"
+        android:paddingStart="@dimen/dim_0"
+        android:textSize="@dimen/universal_text_size14" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etApartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFlatNo"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:fontFamily="@font/sinkinsanslight"
+        android:hint="@string/hint_apartment"
+        android:lineSpacingExtra="@dimen/dim_6"
+        android:paddingStart="@dimen/dim_0"
+        android:textSize="@dimen/universal_text_size14" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etLandmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etApartment"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:fontFamily="@font/sinkinsanslight"
+        android:hint="@string/hint_landmark"
+        android:lineSpacingExtra="@dimen/dim_6"
+        android:paddingStart="@dimen/dim_0"
+        android:textSize="@dimen/universal_text_size14" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLandmark"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:fontFamily="@font/sinkinsanslight"
+        android:hint="@string/hint_pin"
+        android:lineSpacingExtra="@dimen/dim_6"
+        android:paddingStart="@dimen/dim_0"
+        android:textSize="@dimen/universal_text_size14" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPin"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+        android:fontFamily="@font/sinkinsanslight"
+        android:gravity="center_vertical"
+        android:hint="@string/select_city"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="@dimen/universal_text_size14"
+        app:met_floatingLabel="none" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinnerState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerCity"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+        android:fontFamily="@font/sinkinsanslight"
+        android:gravity="center_vertical"
+        android:hint="@string/select_state"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="@dimen/universal_text_size14"
+        app:met_floatingLabel="none" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerState"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:layout_marginBottom="@dimen/dim_8"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/cbAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/titilliumwebregular"
+            android:justificationMode="inter_word"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/cbAccept"
+            android:layout_toRightOf="@+id/cbAccept"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:gravity="center_vertical"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_4"
+            android:text="@string/permanent_address_txt"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_bottom_button" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

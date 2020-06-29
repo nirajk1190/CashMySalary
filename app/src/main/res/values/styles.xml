@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- colorSecondary will be applied to Menu item of NavigationView -->
+        <item name="colorSecondary">@color/white</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+    <style name="toolbarRipple" parent="@style/ThemeOverlay.AppCompat.Light">
+
+        <item name="colorControlHighlight">@color/shadows</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/sinkinsanslight</item>
+
+    </style>
+
+    <!--Toolbar back arrow color-->
+
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+
+        <item name="android:textColorSecondary">@color/white</item>
+
+    </style>
+
+    <style name="ToolbarBackArrow" parent="AppTheme">
+
+        <item name="android:textColorSecondary">@color/black</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="tallerBarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+        <item name="android:indeterminateDrawable">@drawable/seekbar_progress</item>
+        <item name="android:minHeight">@dimen/dim_8</item>
+        <item name="android:maxHeight">@dimen/dim_8</item>
+    </style>
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/sinkinsanslight</item>
+        <item name="android:textSize">@dimen/universal_text_size12</item>
+    </style>
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <style name="TransparentView">
+        <item name="background">@android:color/transparent</item>
+    </style>
+    <style name="SpeedDial"/>
+    <style name="SpeedDial.Base"/>
+   <style name="SpeedDial.Base.FabLabelStyle">
+    <item name="android:ellipsize">end</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:maxWidth">@dimen/sd_label_max_width</item>
+    <item name="android:paddingLeft">4dp</item>
+    <item name="android:paddingRight">4dp</item>
+    <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    <item name="android:textColor">@color/sd_label_text_color</item>
+
+</style>
+    <style parent="SpeedDial.Base.FabLabelStyle" name="SpeedDial.FabLabelStyle">
+    <item name="android:textStyle">bold</item>
+</style>
+
+
+</resources>

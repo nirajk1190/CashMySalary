@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "applicationStatus": 0,
+      "status": "Submitted",
+      "btnText": "Detail",
+      "loanNumber": "LJD2000125",
+      "applicantName": "ABCD",
+      "applicationDate": "07-May-2020",
+      "loanAmount": 30000,
+      "tenure": 30
+    },
+    {
+      "applicationStatus": 1,
+      "status": "Rejected",
+      "btnText": "View Reason",
+      "loanNumber": "LJD2000125",
+      "applicantName": "ABCD",
+      "applicationDate": "07-May-2020",
+      "loanAmount": 30000,
+      "tenure": 30
+    },
+    {
+      "applicationStatus": 2,
+      "status": "Approved",
+      "btnText": "Accept Offer",
+      "loanNumber": "LJD2000125",
+      "applicantName": "ABCD",
+      "applicationDate": "07-May-2020",
+      "loanAmount": 30000,
+      "tenure": 30
+    },
+    {
+      "applicationStatus": 3,
+      "status": "Disbursed",
+      "btnText": "Repayment Detail",
+      "loanNumber": "LJD2000125",
+      "applicantName": "ABCD",
+      "applicationDate": "07-May-2020",
+      "loanAmount": 30000,
+      "tenure": 30
+    }
+  ]
+}

@@ -1,0 +1,732 @@
+<resources>
+    <string name="fb_app_id">208459577239282</string>
+    <string name="app_name">Cash My Salary</string>
+    <string name="btn_eng_text">English</string>
+    <string name="btn_next_text">Next</string>
+    <string name="btn_submit_text">Submit</string>
+    <string name="btn_got_it">Got it</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_agree">Agree</string>
+    <string name="btn_hindi_text">हिन्दी</string>
+    <string name="btn_login_text">Login</string>
+    <string name="confirmation">Exit Alert</string>
+    <string name="are_you_sure">Are you sure want to exit ?</string>
+    <string name="btn_verify_text">Verify</string>
+    <string name="btn_verify_only_text">Verify</string>
+    <string name="otp_verification_text">OTP Verification</string>
+    <string name="btn_lets_go_text">Allow Permissions</string>
+    <string name="tv_forgot_password">Forgot Password?</string>
+    <string name="txt_referral_code">Yes, I have a referral code!</string>
+    <string name="tv_connect_with">-----------  Or connect using  -----------</string>
+    <string name="next">NEXT</string>
+    <string name="did_not_have_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Get Started</string>
+    <string name="loan_amount">Loan Amount?</string>
+    <string name="loan_amount1">Loan Amount</string>
+    <string name="loan_amount_header">Repayment Amount</string>
+    <string name="loan_date_header">Repayment Date</string>
+    <string name="loan_tenure">Loan Tenure?</string>
+    <string name="loan_repayment">Repayment</string>
+    <string name="loan_amount_applied">Loan Amount Applied</string>
+    <string name="tenure">Tenure</string>
+    <string name="loan_payment_date">Payment Date</string>
+    <string name="loan_month">Tenure Month</string>
+    <string name="loan_month_txt">2</string>
+    <string name="loan_payment_date_txt">25-05-2025</string>
+    <string name="loan_processing">Processing Fee</string>
+    <string name="loan_overdue">Overdue Days</string>
+    <string name="loan_disbursal">Disbursal Amount</string>
+    <string name="loan_processing_amt">₹ 3000</string>
+    <string name="rs">₹</string>
+    <string name="loan_disbursal_amt">₹ 27000</string>
+    <string name="loan_interest">Interest (per month)</string>
+    <string name="loan_gst_processing">GST 18% on Processing Fee</string>
+    <string name="total_processing">Total Processing Fee</string>
+    <string name="total_repayment">Total Repayment Amount</string>
+    <string name="submit_apeal">Submit An Appeal</string>
+    <string name="repayment_not_updated">Repayment Not Updated?</string>
+    <string name="total_processing_amt">₹ 3540</string>
+    <string name="loan_gst_processing_amt">₹ 540</string>
+    <string name="loan_interest_txt">3%</string>
+    <string name="loan_tenure_txt">30 days</string>
+    <string name="loan_amount_txt">₹ 30000</string>
+    <string name="loan_id_txt">Loan ID: LJD2000125</string>
+    <string name="loan_id_heading">Loan ID:</string>
+    <string name="loan_amt_heading">Loan</string>
+    <string name="amount_due">Amount</string>
+    <string name="amount_due1">Due</string>
+
+    <string name="payment_amount_heading">Payment</string>
+    <string name="payment_date">Date</string>
+
+
+    <string name="loan_amt_heading1">Amount</string>
+    <string name="repayment_amt_heading">Payable on</string>
+    <string name="paid_on_due_date_heading">Paid on</string>
+    <string name="repayment_amt_heading1">Due Date</string>
+    <string name="repayment_date_heading">Due Date</string>
+    <string name="due_today_heading">Due If</string>
+    <string name="due_today_heading1">Paid Today</string>
+    <string name="repayment_amount">Repayment</string>
+    <string name="due_amount">Due</string>
+    <string name="loan_id">LJD2000125</string>
+    <string name="loan_status">Approved</string>
+    <string name="loan_repayemt_txt">₹ 35340</string>
+    <string name="slide_1_desc">Now getting a loan is at your fingertips</string>
+    <string name="btn_generate_otp_text">Get OTP</string>
+    <string name="btn_apply_text">Apply</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_apply_now_text">Apply Now</string>
+    <string name="btn_upload_text">Upload</string>
+    <string name="btn_repayment_text">Repayment</string>
+    <string name="btn_regenerate_otp_text">Resend OTP</string>
+    <string name="btn_pay_text">Pay now</string>
+    <string name="generate_noc">Generate NOC</string>
+    <string name="apply_again_txt">Apply again</string>
+    <string name="slide_2_desc">Get instant loan approval &amp; disbursal</string>
+    <string name="slide_3_desc">No paperwork</string>
+    <string name="accept_text">I agree to CashmySalary\'s <a href="https://www.google.com/"><font color='#dd1f25'>Terms and Conditions</font></a> of the loan application</string>
+    <string name="authorize_text">I authorize CashmySalary to pull my credit report</string>
+    <string name="et_phone_hint">Mobile Number</string>
+    <string name="et_password_hint">Enter OTP</string>
+    <string name="et_pass_hint">Password</string>
+    <string name="et_referral_hint">Referral Code (optional)</string>
+    <string name="sign_in_with_google">Google</string>
+    <string name="sign_in_with_fb">Facebook</string>
+    <string name="today">Today</string>
+    <string name="payment_due_heading">Payment Due</string>
+    <string name="payment_amount">Payment Amount :</string>
+    <string name="select_payment">Select a payment method</string>
+    <string name="how_much_cash">Loan Amount:</string>
+    <string name="select_language">Select your language</string>
+    <string name="instant_loan_txt">Instant Loan for</string>
+    <string name="instant_loan_txt1">Salaried + Self Employed</string>
+    <string name="applied_loan_success">Application submitted successful</string>
+    <string name="your_loan">Your Loan</string>
+    <string name="credit_note">We can help you build a better credit history and enhance your chances of getting a loan with higher limits</string>
+    <string name="welcome2_txt1">Seamless and easy application process</string>
+    <string name="welcome2_txt2">No paperwork</string>
+    <string name="welcome3_txt1">Loan Sanctioned in minutes</string>
+    <string name="welcome3_txt2">Disbursed in your account in</string>
+    <string name="welcome3_txt3">30 Minutes</string>
+    <string name="permission_act_toolbar_title">Permission</string>
+    <string name="pesonal_act_toolbar_title">Personal Information</string>
+    <string name="residence_act_toolbar_title">Residence Information</string>
+    <string name="edit_profile_act_toolbar_title">Edit Profile</string>
+    <string name="calculator_act_toolbar_title">Apply for a Instant Personal Loan</string>
+    <string name="status_act_toolbar_title">Application Status</string>
+    <string name="existing_loan_toolbar_title">Supporting Additional Information</string>
+    <string name="additional_info_toolbar_title">Additional Information</string>
+    <string name="employment_info_toolbar_title">Employment Information</string>
+    <string name="work_toolbar_title">Work Address</string>
+    <string name="bank_detail_toolbar_title">Salary Account Details</string>
+    <string name="apply_result_toolbar_title">Apply Result</string>
+    <string name="loan_detail_toolbar_title">Your Loan is Approved</string>
+    <string name="loan_agreement_toolbar_title">Loan Agreement</string>
+    <string name="congratulation_toolbar_title">Instant Loan</string>
+    <string name="e_mandate_toolbar_title">Bank details for Loan Disbursal</string>
+    <string name="bank_details_heading">Bank Details</string>
+    <string name="face_recognition_toolbar_title">Face Certification</string>
+    <string name="reference_act_toolbar_title">Reference Detail</string>
+    <string name="kyc_act_toolbar_title">KYC Documents</string>
+    <string name="loan_record_toolbar_title">Loan History</string>
+    <string name="notification_toolbar_title">Notification</string>
+    <string name="application_summary_toolbar_title">My Application Summary</string>
+    <string name="offers_toolbar_title">Special Offers</string>
+    <string name="contact_us_toolbar_title">Contact Us</string>
+    <string name="submit_appeal_toolbar_title">Submit An Appeal</string>
+    <string name="upload_receipt_toolbar_title">Upload Repayment Receipt</string>
+    <string name="application_status_toolbar_title">Application Status</string>
+    <string name="loan_record_detail_toolbar_title">Loan Record Detail</string>
+    <string name="invite_friend_toolbar_title">Invite a Friend</string>
+    <string name="profile_act_toolbar_title">Profile</string>
+    <string name="enter_otp_text">Enter the OTP code sent to your mobile number</string>
+    <string name="mobile_number_verified_text">Your mobile number has been updated successfully!</string>
+    <string name="enter_number_text">Enter your registered mobile number, or the number with which you would like to register with us</string>
+    <string name="enter_number_text2">Enter your registered mobile number</string>
+    <string name="permission_content">To assess your eligibility and facilitate faster disbursal of your loan, we need permissions to access your Camera, Contacts, Location, Phone, Storage and SMS.</string>
+    <string name="home_text">Home</string>
+    <string name="getloan_text">Get Loan</string>
+    <string name="my_loan_text">My Loan</string>
+    <string name="profile_text">Profile</string>
+    <string name="profile_edit">View &amp; Edit Profile</string>
+    <string name="heading_login_with">Welcome back!</string>
+    <string name="heading_login_with_subheading">Enter your mobile number we will send you OTP to verify</string>
+
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="choose_pereferred_language">Choose your preferred language</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_document">My Document</string>
+    <string name="menu_loan">Loan History</string>
+    <string name="menu_app_status">Application Status</string>
+    <string name="menu_language">Change Language / भाषा बदलें</string>
+    <string name="menu_account">My Account</string>
+    <string name="menu_invite">Refer &amp; Earn</string>
+    <string name="menu_terms">T&amp;C / Privacy policy</string>
+    <string name="menu_aboutUs">About Us</string>
+    <string name="menu_legal">Legal</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_contactUs">Contact Us</string>
+    <string name="menu_logOut">Log out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="payment_mode_txt">Select your preferred method of Payment</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>My Document</item>
+        <item>Loan Record</item>
+        <item>Application Status</item>
+        <item>Language</item>
+        <item>Notifications</item>
+        <item>Invite a friend</item>
+        <item>T&amp;C / Privacy policy</item>
+        <item>About Us</item>
+        <item>FAQ</item>
+        <item>Contact Us</item>
+        <item>Log out</item>
+    </string-array>
+
+    <string-array name="repayment_channel">
+        <item>Razorpay</item>
+        <item>PAYTM</item>
+        <item>Bank Transfer</item>
+    </string-array>
+
+    <string-array name="repayment_issue">
+        <item>Already repaid but not update</item>
+        <item>Paid extra amount</item>
+    </string-array>
+
+    <string-array name="education_array">
+        <item>Graduate</item>
+        <item>Undergraduate</item>
+        <item>Post Undergraduate</item>
+    </string-array>
+    <string-array name="employment_array">
+        <item>Salaried</item>
+        <item>Self Employed</item>
+    </string-array>
+
+    <string-array name="residence_type_array">
+        <item>Owned by self/spouse</item>
+        <item>Owned by parent/sibling</item>
+        <item>Rented - With Family</item>
+        <item>Rented - With Friends</item>
+        <item>Rented - Staying alone</item>
+        <item>Paying guest</item>
+        <item>Hostel</item>
+        <item>Company Provided</item>
+    </string-array>
+
+    <!--Occupation list-->
+    <string-array name="occupation_list">
+        <item>Technician</item>
+        <item>Teacher</item>
+        <item>Radiographer</item>
+        <item>Technologist</item>
+        <item>Machinist</item>
+        <item>Electrician</item>
+        <item>Actuary</item>
+        <item>Engineering technician</item>
+        <item>Drafter</item>
+        <item>Tradesman</item>
+        <item>Medical laboratory scientist</item>
+        <item>Auto mechanic</item>
+        <item>Quantity surveyor</item>
+        <item>Lawyer</item>
+        <item>Paramedic</item>
+        <item>Prosthetist</item>
+        <item>Bricklayer</item>
+        <item>Surveyor</item>
+        <item>Special Education Teacher</item>
+        <item>Dietitian</item>
+        <item>Consultant</item>
+        <item>Mechanic</item>
+        <item>Software Developer</item>
+        <item>Plumber</item>
+        <item>Physician</item>
+        <item>Scientist</item>
+        <item>Sonographer</item>
+        <item>Hairdresser</item>
+        <item>Surgeon</item>
+        <item>Physiotherapist</item>
+        <item>Plasterer</item>
+        <item>Nurse practitioner</item>
+        <item>Dental technician</item>
+        <item>Dental hygienist</item>
+        <item>Pharmacy technician</item>
+        <item>General practitioner</item>
+        <item>Veterinarian</item>
+        <item>Dental therapist</item>
+        <item>Welder</item>
+        <item>Broker</item>
+        <item>Youth Worker</item>
+        <item>Curator</item>
+        <item>Engineer</item>
+        <item>Athlete</item>
+        <item>Statistician</item>
+        <item>Artist</item>
+        <item>Test engineer</item>
+        <item>Network administrator</item>
+        <item>Glazier</item>
+        <item>Arborist</item>
+        <item>Environmental health officer</item>
+
+
+    </string-array>
+
+    <string name="heading_loan_details">Loan Detail</string>
+    <string name="header_basic">Basic Info</string>
+    <string name="header_repayment_details">Repayment Details</string>
+    <string name="header_fill_blank">Fill in below or Upload a Cheque Image</string>
+    <string name="header_pan">PAN Detail</string>
+    <string name="header_reference">Reference Detail</string>
+    <string name="header_resindence">Residence Info</string>
+
+    <string name="header_first_name">First Name <font color='#dd1f25'>*</font></string>
+    <string name="header_credit_card">How many credit cards do you have?</string>
+    <string name="header_residential_status">Residential Status:</string>
+    <string name="header_vehicle_status">Do you own a Vehicle:</string>
+    <string name="header_address">Current Address <font color='#dd1f25'>*</font></string>
+    <string name="header_permanent_address">Permanent Address <font color='#dd1f25'>*</font></string>
+    <string name="header_pin">Current PIN Code <font color='#dd1f25'>*</font></string>
+    <string name="header_permanent_pin">Permanent PIN Code <font color='#dd1f25'>*</font></string>
+    <string name="header_city">Current City <font color='#dd1f25'>*</font></string>
+    <string name="header_permanent_city">Permanent City <font color='#dd1f25'>*</font></string>
+    <string name="header_state">Current State <font color='#dd1f25'>*</font></string>
+    <string name="header_permanent_state">Permanent State <font color='#dd1f25'>*</font></string>
+    <string name="header_middle_name">Middle Name</string>
+    <string name="header_credit_limit">Highest Credit Card Limit?</string>
+    <string name="header_credit_score">Do you know your Credit Score: Please share</string>
+    <string name="header_last_name">Last Name <font color='#dd1f25'>*</font></string>
+    <string name="header_existing_emi">Do you have existing Loans EMI\'s</string>
+    <string name="header_linkedin_profile">Your LinkedIn Profile Link:</string>
+    <string name="header_facebook_profile">Your Facebook Profile Link:</string>
+    <string name="header_residence_proof">Residence Proof ( Electricity Bill / House Tax ) or Rent / Lease Agreement</string>
+    <string name="header_residence_proof1">Residence Proof</string>
+    <string name="header_past_loan">Have you taken and repaid a personal loan in last 2 months?</string>
+    <string name="header_father_name">Father\'s Name <font color='#dd1f25'>*</font></string>
+    <string name="header_mother_name">Mother\'s Name <font color='#dd1f25'>*</font></string>
+    <string name="header_gender">Gender <font color='#dd1f25'>*</font></string>
+    <string name="header_dob">Date of Birth <font color='#dd1f25'>*</font></string>
+    <string name="header_marital">Marital Status <font color='#dd1f25'>*</font></string>
+    <string name="header_edu_qualification">Educational Qualification <font color='#dd1f25'>*</font></string>
+    <string name="header_loan_purpose">Loan Purpose <font color='#dd1f25'>*</font></string>
+    <string name="header_emp_status">Employment Status <font color='#dd1f25'>*</font></string>
+    <string name="header_relation">Relationship <font color='#dd1f25'>*</font></string>
+    <string name="header_relation1">Relationship </string>
+    <string name="note"><font color='#dd1f25'>Tips: Please upload the clear and valid photo as much as possible</font></string>
+    <string name="header_preferred_lang">Preferred Language <font color='#dd1f25'>*</font></string>
+    <string name="header_emal">Email <font color='#dd1f25'>*</font></string>
+    <string name="header_name">Name <font color='#dd1f25'>*</font></string>
+    <string name="header_name1">Name</string>
+    <string name="header_pan_detail">PAN Card No. <font color='#dd1f25'>*</font></string>
+    <string name="header_mobile">Mobile Number</string>
+    <string name="header_mobile1">Mobile Number*</string>
+    <string name="header_otp">OTP <font color='#dd1f25'>*</font></string>
+    <string name="header_switch">Same as current</string>
+    <string name="header_selfie">Selfie <font color='#dd1f25'>*</font></string>
+    <string name="header_cheque">Upload Cheque Image<font color='#dd1f25'>*</font></string>
+    <string name="header_cheque_txt">Upload Cheque Image</string>
+    <string name="header_adhaar_card">Aadhaar Card <font color='#dd1f25'>*</font></string>
+    <string name="header_adhaar_card_front">Aadhaar Card ( Front )</string>
+    <string name="header_adhaar_card_back">Aadhaar Card ( Back )</string>
+    <string name="header_pan_card">Pan Card <font color='#dd1f25'>*</font></string>
+    <string name="header_adhaar_front">(Front)</string>
+    <string name="header_adhaar_back">(Back)</string>
+    <string name="header_other_info">Other Address Proof</string>
+    <string name="header_other_optional">(Optional)</string>
+
+    <string name="hint_first_name">First name</string>
+    <string name="hint_enter_answer">Enter your answer</string>
+    <string name="hint_middle_name">Middle name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_enter_emi">Enter Amount</string>
+    <string name="hint_enter_linkedin">Enter your LinkedIn Profile Link</string>
+    <string name="hint_enter_facebook">Enter your Facebook Profile Link</string>
+    <string name="hint_submit_residence">Please submit Proof of ownership</string>
+    <string name="hint_submit_credit_card_statment">Please submit recent Credit Card statment</string>
+    <string name="hint_submit_vehicle">Please share RC copy</string>
+    <string name="hint_enter_lender">Enter Lender Name</string>
+    <string name="hint_proof_payment">Upload a proof of payment</string>
+    <string name="hint_upload_report">Please submit your credit report</string>
+    <string name="hint_father_name">Enter your father\'s name</string>
+    <string name="hint_mother_name">Enter your mother\'s name</string>
+    <string name="hint_dob">Date of Birth</string>
+    <string name="hint_email">Enter your email Id</string>
+    <string name="hint_name">Enter name</string>
+    <string name="hint_mobile">Select number from phone contacts</string>
+    <string name="hint_otp">Enter OTP</string>
+    <string name="hint_address">Enter your current address</string>
+    <string name="hint_permanent_address">Enter your permanent address</string>
+    <string name="hint_pin">PIN code</string>
+    <string name="hint_permanent_pin">Enter your permanent PIN code</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="married">Married</string>
+    <string name="unmarried">Unmarried</string>
+    <string name="select_edu">Select Your Education Qualification</string>
+    <string name="select_loan_purpose">Please select purpose of the loan</string>
+    <string name="select_emp_status">Select employment status</string>
+    <string name="select_relationship">Select relationship</string>
+    <string name="select_city">Select city</string>
+    <string name="select_state">Select state</string>
+
+    <string name="select_preferred_language">Select preferred language for communication</string>
+
+    <!--Empoyment info-->
+    <string name="header_company_name">Company/Organisation name <font color='#dd1f25'>*</font></string>
+    <string name="header_occupation">Occupation <font color='#dd1f25'>*</font></string>
+    <string name="header_designation">Designation <font color='#dd1f25'>*</font></string>
+    <string name="header_empoyed_since">Employed Since (Current Job) <font color='#dd1f25'>*</font></string>
+    <string name="header_monthly_salary">Monthly Take Home Salary <font color='#dd1f25'>*</font></string>
+    <string name="header_salary_date">Salary Date <font color='#dd1f25'>*</font></string>
+    <string name="header_office_address">Office Address <font color='#dd1f25'>*</font></string>
+    <string name="header_office_pin">Office Pin <font color='#dd1f25'>*</font></string>
+    <string name="header_office_city">Office City <font color='#dd1f25'>*</font></string>
+    <string name="header_office_state">Office State <font color='#dd1f25'>*</font></string>
+    <string name="header_office_email">Office Email (If available, it is proof of your current employment)</string>
+    <string name="header_landline_number">Office Landline Number (We will not call your office to enquire about you)</string>
+    <string name="header_employee_badge">Employee Badge</string>
+    <string name="header_salary_slip">Salary slip 3 months or letter from employer confirming employment</string>
+    <string name="header_pdf_password">PDF Password</string>
+
+
+    <string name="hint_company_name">Enter your company name</string>
+    <string name="hint_occupation">Select occupation</string>
+    <string name="hint_designation">Enter your designation</string>
+    <string name="hint_employed_since">Select date</string>
+    <string name="hint_monthly_salary">Enter your monthly take home salary</string>
+    <string name="hint_salary_date">Select date</string>
+    <string name="hint_office_address">Enter your office address</string>
+    <string name="hint_office_pin">Enter your office address pin code</string>
+    <string name="hint_office_city">Select city</string>
+    <string name="hint_office_state">Select state</string>
+    <string name="hint_office_email">Please enter your official email ID</string>
+    <string name="hint_landline_number">Enter your office landline number</string>
+    <string name="hint_salary_slip">Upload a PDF document</string>
+    <string name="hint_pdf_password">Enter the PDF password</string>
+
+    <!--Bank Details-->
+    <string name="header_bank_name">Bank Name <font color='#dd1f25'>*</font></string>
+    <string name="header_bank_Statement">Bank Statement 3 months (PDF Format)<font color='#dd1f25'>*</font></string>
+    <string name="header_business_name">Business Name <font color='#dd1f25'>*</font></string>
+    <string name="header_business_nature">Business Nature <font color='#dd1f25'>*</font></string>
+    <string name="header_itr_file">Do you file ITR? <font color='#dd1f25'>*</font></string>
+    <string name="header_turn_over">Turn Over <font color='#dd1f25'>*</font></string>
+
+
+    <string name="hint_bank_name">Select bank name</string>
+    <string name="hint_bank_statement">Upload a PDF document</string>
+    <string name="hint_business_name">Enter business name</string>
+    <string name="hint_business_nature">Enter business nature</string>
+    <string name="hint_itr_file">Enter your answer</string>
+    <string name="hint_turn_over">Enter your business turn over</string>
+    <string name="bank_statement_note"><font color='#dd1f25'>Note: We are unable to process loan application without the bank statement. Please note that submitting a altered/edited or fake bank statement or supporting documents is fraud and punishable under Section 420 of IPC.</font></string>
+    <string name="bank_note">We require minimum 3 months bank statement to process your application. You can now download bank statement from official bank website.</string>
+    <string name="short_note">This completes the Mandatory part of your Loan Application</string>
+    <string name="happen_next"><font color='#dd1f25'>What Happens Next:</font>  We will process your Application and send you in principle sanction letter with the sanctioned amount, Interest rate and other changes. Once you accept the Sanction on the App, the loan amount will be transferred to your bank account within minutes.</string>
+    <string name="happen_next1">Our Credit Manager may also call you to clarify any point or seek any additional information</string>
+    <string name="under_review">Your Application is under review</string>
+    <string name="thank_u_txt"><font color='#dd1f25'>Thank you for confirming the Loan agreement</font></string>
+    <string name="last_step_txt">As the last step before disbursement please activate E-Mandate for the loan repayment below</string>
+    <!--E mandate-->
+    <string name="header_beneficiary_name">Beneficiary Name <font color='#dd1f25'>*</font></string>
+    <string name="header_account_number">Bank Account Number <font color='#dd1f25'>*</font></string>
+    <string name="header_re_enter">Re-Enter Bank Account Number <font color='#dd1f25'>*</font></string>
+    <string name="header_ifsc_code">IFSC Code <font color='#dd1f25'>*</font></string>
+    <string name="header_upi_handle">UPI Handle (if any)</string>
+    <string name="header_or">OR</string>
+
+
+    <string name="hint_beneficiary_name">Enter your name as in the Bank Account / Debit Card</string>
+    <string name="hint_account_number">Enter your bank account number</string>
+    <string name="hint_re_enter">Re-enter your bank account number</string>
+    <string name="hint_ifsc_code">Enter your bank IFSC code</string>
+    <string name="hint_upi_handle">Enter UPI address</string>
+
+
+    <string name="instruction_one">Ensure sufficient background light</string>
+    <string name="instruction_two">Avoid reflections</string>
+    <string name="instruction_three">Take off your glasses</string>
+
+
+    <string name="instant_emi_loan">Instant Personal Loan</string>
+    <string name="what_are_looking_for">What are you looking for?</string>
+    <string name="emi_loan">EMI Loan</string>
+    <string name="credit_line_for_techies">Credit Line For Techies</string>
+    <string name="credit_line_for_business">Credit Line For Business</string>
+
+
+    <string name="what_are_looking_for_sub">Choose one - Instant EMI Loan, Women Loan, Credit Line</string>
+    <string name="apply_for_instant_emi_loan">Apply for Instant Personal Loan</string>
+    <string name="apply_for_emi_loan">Apply for EMI Loan</string>
+    <string name="apply_for_women_loan">Apply for Women Loan</string>
+    <string name="apply_for_credit_line_for_techies">Apply for Credit Line For Techies</string>
+    <string name="apply_for_credit_line_for_business">Apply for Credit Line For Business</string>
+
+    <string name="heading_loan_amt">Loan Amount</string>
+    <string name="heading_loan_number">Loan Number</string>
+    <string name="heading_loan_duration">Tenure</string>
+    <string name="heading_disburasal_amount">Disbursal Amount</string>
+    <string name="heading_interest">Interest</string>
+    <string name="heading_processing_fee">Processing Fee</string>
+    <string name="heading_service_charge">GST on Processing Fee</string>
+    <string name="heading_repayment_amount">Repayment Amount</string>
+    <string name="heading_application_date">Application Date</string>
+    <string name="heading_repayment_plan">Repayment Plan</string>
+    <string name="otp_timer_text">You will receive the OTP within</string>
+    <string name="did_not_recieve_otp_text">Haven\'t received OTP yet?</string>
+
+    <string name="principal">Principal:</string>
+    <string name="overdue_days">Overdue Days:</string>
+    <string name="overdue_fees_gst">Overdue Fees GST:</string>
+    <string name="interest_amount">Interest:</string>
+    <string name="overdue_fees">Overdue Fees:</string>
+    <string name="default_fees">Default Fees:</string>
+    <string name="search_hint">Type name…</string>
+    <string name="bank_details_btn_text">Submit and Go to Optional Section</string>
+
+
+    <string name="add_info_note"><font color='#dd1f25'>Please provide information on whatever maximum points you can each answer significantly improves outcome of your application</font></string>
+    <string name="add_info_card_one">1</string>
+    <string name="rb_owned_house">Owned house (Self / parents)</string>
+    <string name="rb_two_wheeler">Two Wheeler</string>
+    <string name="rb_four_wheeler">Four Wheeler</string>
+    <string name="rb_none">None</string>
+    <string name="rb_rented">Rented / Leased</string>
+    <string name="add_info_card_two">2</string>
+    <string name="add_info_card_three">3</string>
+    <string name="add_info_credit_card">Upload one Most Recent Credit Card Statement</string>
+    <string name="add_info_rc_copy">Upload RC Copy</string>
+    <string name="add_info_credit_report">Upload Credit Report (If Available)</string>
+    <string name="avail_loan_txt">To Avail Loan, Please read and confirm the Loan Agreement</string>
+    <string name="agreement_confirm_text">I agree to CashmySalary\'s <font color='#dd1f25'>Loan Agreement</font> of the loan application</string>
+
+    <!--Permission_text-->
+
+    <!--Device and App history-->
+    <string name="app_history">Device &amp; App history</string>
+    <string name="app_history1">\u2022 read you Web bookmarks and history</string>
+    <string name="app_history2">\u2022 retrieve running apps</string>
+
+    <!--Identity-->
+    <string name="identity">Identity</string>
+    <string name="identity1">\u2022 find accounts on the device</string>
+
+    <!--Calender-->
+    <string name="calender">Calender</string>
+    <string name="calender1">\u2022 read calender events plus confidential information</string>
+    
+    <!--Contacts-->
+    <string name="contacts">Contacts</string>
+    <string name="contacts1">\u2022 read your contacts</string>
+
+    <!--Location-->
+    <string name="locations">Location</string>
+    <string name="location1">\u2022 approximate location (network based)</string>
+    <string name="location2">\u2022 precise location (GPRS and network-based)</string>
+    
+    <!--SMS-->
+    <string name="sms">SMS</string>
+    <string name="sms1">\u2022 receive text messages (SMS or MMS)</string>
+    <string name="sms2">\u2022 send SMS messages</string>
+    
+    <!--phone-->
+    <string name="phone">Phone</string>
+    <string name="phone1">\u2022 read call log</string>
+    <string name="phone2">\u2022 write call log</string>
+    <string name="phone3">\u2022 reroute outgoing calls</string>
+
+    <!--Photos/Media/Files-->
+    <string name="photos">Photos/Media/Files</string>
+    <string name="photos1">\u2022 modify or delete the contents of your SD Card</string>
+    <string name="photos2">\u2022 read the contents of you SD card</string>
+
+    <!--Camera-->
+    <string name="camera">Camera</string>
+    <string name="camera1">\u2022 take pictures and videos</string>
+
+    <!--Wifi connections-->
+    <string name="wifi_connection">Wi-Fi connection information</string>
+    <string name="wifi_connection1">\u2022 view Wi-Fi connections</string>
+
+    <!--Device ID & call information-->
+    <string name="device_id">Device ID &amp; call infirmation</string>
+    <string name="device_id1">\u2022 read phone status and identify</string>
+
+    <!--Refer and Earn text-->
+    <string name="refer_heading">Refer &amp; Earn</string>
+    <string name="referral_code_heading">Your Referral Code:</string>
+    <string name="referral_code">NIRKIUQUL</string>
+    <string name="click_to_copy">Click to copy</string>
+    <string name="share_txt">Share</string>
+    <string name="share_via_txt">Share Via :</string>
+    <string name="refer_sub_heading">Share your referral code with your friends and get a discount on Processing Fee.</string>
+    <string name="email">Email</string>
+    <string name="message">Message</string>
+    <string name="whatsapp">Whats App</string>
+    <string name="messanger">Messenger</string>
+
+    <!--Contact Us-->
+    <string name="header">Do you have any questions to us or have any suggestions for us.</string>
+    <string name="header_hotline">Customer Service Hotline:</string>
+    <string name="call_now">Call Now</string>
+    <string name="mail_us">Mail Us</string>
+    <string name="faster_resolution_txt">For faster resolution reach out to us on</string>
+    <string name="copy">Copy</string>
+    <string name="business_timings">Business Timings</string>
+    <string name="mon_fri">Monday - Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="mon_fri_time">10:00 AM - 9.00 PM</string>
+    <string name="saturday_time">10:00 AM - 7.00 PM</string>
+    <string name="email_content">help@cashmysalary.in</string>
+    <string name="closed_txt">Closed on Sundays and Public holidays</string>
+    <string name="busniess_address">Address</string>
+    <string name="my_appeal_txt">My Appeal</string>
+    <string name="busniess_address1">Basement No. 1, Skipper House, 62, 63,Nehru Place, New Delhi, Delhi, 110019</string>
+
+    <!--Appeal txt-->
+    <string name="bullet">\u2022 </string>
+    <string name="appeal_submit_txt">Upload Repayment Receipt</string>
+    <string name="receipt_submit_txt">Submit</string>
+    <string name="mandatory_txt">All <font color='#dd1f25'>*</font> is mandatory </string>
+    <string name="appeal_heading">If you face payment issues as following, please submit your repayment receipts to us for an appeal</string>
+    <string name="text_bullet_one">\u2022 Already paid but not update on application</string>
+    <string name="text_bullet_two">\u2022 Double/Extra paid due to mistake or technical issues</string>
+    <string name="appeal_note">After your submission, we will handle it and response within 48 hours. Your credit record will not be affected if we confirm that you repaid on time, we will refund the extra payment if any.</string>
+    <string name="warning_txt">Warning</string>
+    <string name="warning_msg_one">\u2022  Repayment Appeal is only for appeal after repayment, only genuine payment proof is accepted, either transfer screenshot or bank transfer slip photo.</string>
+    <string name="warning_msg_two">\u2022  If you submit irrelevant or fake information. It will be considered as fraud case directly, and it may affect your CIBIL credit score.</string>
+
+    <string name="payment_date_hint">Payment Date <font color='#dd1f25'>*</font></string>
+    <string name="repayment_channel">Repayment Channel <font color='#dd1f25'>*</font></string>
+    <string name="repayment_proof">Repayment Proof <font color='#dd1f25'>*</font></string>
+    <string name="repayment_issue">Repayment Issue <font color='#dd1f25'>*</font></string>
+    <string name="transaction_id">Transaction ID / Reference Number <font color='#dd1f25'>*</font></string>
+    <string name="characters">0 / 50</string>
+    <string name="remarks_characters">0 / 100</string>
+    <string name="repayment_proof_hint">Online transfer screenshot, Bank transfer slip, etc</string>
+    <string name="remarks">Remarks (optional)</string>
+    <string name="leave_message">Leave A Mesaage</string>
+    <string name="remarks_hint">Any other questions, please mention them here…</string>
+    <string name="type_message">Message…</string>
+
+    <string name="home_profile">Profile</string>
+    <string name="home_apply_now">Apply Now</string>
+    <string name="home_credit">Your Credit Analysis</string>
+    <string name="home_upcoming_payments">Upcoming Payments</string>
+    <string name="home_check_status">Check Status</string>
+    <string name="home_special_offers">Special Offers</string>
+    <string name="lbl_set_profile_photo">Choose an action</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+
+
+    <string name="help_credit_limit">Credit Limit Enhancement</string>
+    <string name="help_loan_repayment">Loan Repayment</string>
+    <string name="help_loan_disbursal">Loan Disbursal</string>
+    <string name="help_profile_verification">Profile Verification</string>
+    <string name="help_query">Didn\'t find your Query?</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+
+    <!--Rejection_txt-->
+    <string name="rej_heading_1">Low credit bureau score</string>
+    <string name="rej_heading_2">Lock of credit history</string>
+    <string name="rej_heading_3">Poor loan repayment history</string>
+    <string name="rej_heading_4">High existing debts</string>
+    <string name="rej_heading_5">High number of loan enquiries</string>
+
+
+    <string name="rej_subheading_1">A high bureau score (typically above 700) is preferred for a loan to be approved. Low bureau score might be a result of previous defaults on loans or credit cards, high credit card limit utilization, irregular due payments, high unsecured debts, and high number of loan enquiries.\n\nTip: Regularly check your credit report and look for the above mentioned elements which are taking your score up or down. In case of any issues, try to fix it as soon as possible.</string>
+    <string name="rej_subheading_2">Having a long history in the credit bureau shows financial maturity and positively contributes to a healthy credit score.\n\nTip: Regular payment of long term loans and credit cards help in building a mature credit profile. It is good to start with a credit card and maintain a low to medium credit limit utilization.</string>
+    <string name="rej_subheading_3">Non-payment, late payments of your EMI\'s and credit card bills negatively affect your credit score. \n\nTip: Always pay your EMI\'s and credit card dues on time. If you have any outstanding payments, clear them as soon as possible</string>
+    <string name="rej_subheading_4">Having a high number of existing debt obligations reduces your ability to have sufficient money left for further loan repayments.\n\nTip: Maintain a healthy debt-to-income ratio by assuring that your monthly debt obligations are not very high % of your income. Avoid very high EMI amounts.</string>
+    <string name="rej_subheading_5">Too many and too frequent loan enquiries are perceived as a sign of inability in managing your finances and thus constant need for credit.\n\nTip: Keep sufficient time period between your loan applications and try to complete your current obligations and try to complete your current obligations before applying for additioanal loans.</string>
+
+
+    <string name="reject_heading">Application Not Approved</string>
+    <string name="reject_sorry_msg">Sorry, We are not able to approve your loan application currently</string>
+    <string name="reject_days">You can re-apply after 90 days.</string>
+    <string name="reject_possible_reason">Possible Reasons:</string>
+
+    <string name="approved_msg">Loan Approved!</string>
+    <string name="referral">Referral Code (optional)</string>
+    <string name="referral_txt">Invited to CashmySalary by a friend? Enter your friend\'s referral code and get special discounts.</string>
+    <string name="enter_code_here">Enter code here</string>
+
+    <string name="mandatory">mandatory</string>
+    <string name="superscript"><sup>*</sup></string>
+    <string name="internet_connection_error_string">No Internet Connection</string>
+    <string name="play_service_error_string">Google Play Service Not Found</string>
+
+
+    <string name="application_status">Application Status</string>
+    <string name="details">Details</string>
+    <string name="reasons">View Reason</string>
+    <string name="accept_offer">Accept Offer</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="msg_load_default">Loading…</string>
+    <string name="runtime_permissions_txt">Please enable ALL permissions.</string>
+    <string name="btn_previous_text">Previous</string>
+    <string name="header_basic_info">Enter your basic information</string>
+    <string name="header_educational_qualification">Tell us your Education Qualification</string>
+    <string name="header_employment">Tell us your Employment Details</string>
+    <string name="header_company">Company I work for</string>
+    <string name="hint_start_typing">Start typing here...</string>
+    <string name="designation_header">Tell us your Designation</string>
+    <string name="joining_date">Joining date with CASH MY SALARY</string>
+    <string name="monthly_salary_header">My net monthly salary is</string>
+    <string name="address_header">Add your current home address</string>
+    <string name="office_address_header">Add your office address</string>
+    <string name="hint_flat_no">Flat No/Block No/House No</string>
+    <string name="hint_building_no">Building No</string>
+    <string name="hint_apartment">Apartment/Street/Locality/Area Name</string>
+    <string name="hint_locality">Locality / Area Name</string>
+    <string name="hint_landmark">Landmark (Optional)</string>
+    <string name="permanent_address_txt">This is my permanent address also</string>
+    <string name="header_residence_type">Tell us about your residence type</string>
+    <string name="select_residence_type">Select Your Type of Residence</string>
+    <string name="take_selfie">Take Your Selfie</string>
+    <string name="adhaar_front_back">Take Adhaar Picture</string>
+    <string name="take_pan_card">Take Pan Card Picture</string>
+    <string name="office_email">Please provide your office email</string>
+    <string name="heading_lets_started">"Let's Get Started! "</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="login_here">Login here</string>
+    <string name="review">Review</string>
+    <string name="done">Done</string>
+    <string name="rb_owned_self">Owned by self/spouse</string>
+    <string name="rb_rented_with_family">Rented-With Family</string>
+    <string name="rb_rented_staying_alone">Rented-Staying alone</string>
+    <string name="rb_hostel">Hostel</string>
+    <string name="rb_owned_by_parent">Owned by parent/sibling</string>
+    <string name="rb_rented_with_friends">Rented - With Friends</string>
+    <string name="rb_paying_guest">Paying guest</string>
+    <string name="rb_company_provided">Company provided</string>
+
+
+</resources>

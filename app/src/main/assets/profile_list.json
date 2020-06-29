@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "title": "Personal Info",
+      "id": 101
+    },
+    {
+      "title": "Reference Detail",
+      "id": 102
+    },
+    {
+      "title": "KYC Documents",
+      "id": 103
+    },
+    {
+      "title": "Bank Detail",
+      "id": 104
+    },
+    {
+      "title": "Face recognition",
+      "id": 105
+    },
+    {
+      "title": "Loan History",
+      "id": 106
+    },
+    {
+      "title": "Employment Info",
+      "id": 107
+    },
+    {
+      "title": "E-mandate",
+      "id": 108
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlCouponCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8"
+        android:padding="@dimen/dim_4">
+
+        <TextView
+            android:id="@+id/tvReferralHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dim_6"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/referral"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/universal_text_size12" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dim_6"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:text="@string/skip"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/universal_text_size12" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvReferralNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_6"
+        android:layout_below="@+id/rlCouponCode"
+        android:fontFamily="@font/sinkinsanslight"
+        android:lineSpacingExtra="@dimen/dim_6"
+        android:layout_marginLeft="@dimen/dim_4"
+        android:layout_marginTop="@dimen/dim_4"
+        android:justificationMode="inter_word"
+        android:text="@string/referral_txt"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/universal_text_size12" />
+
+    <EditText
+        android:layout_width="@dimen/dim_300"
+        android:layout_height="@dimen/dim_40"
+        android:id="@+id/etCode"
+        android:layout_below="@+id/tvReferralNote"
+        android:layout_marginStart="@dimen/dim_8"
+        android:layout_toStartOf="@+id/btnApply"
+        android:layout_marginTop="@dimen/dim_8"
+        android:textColor="@color/colorAccent"
+        android:hint="@string/enter_code_here"
+        android:paddingLeft="@dimen/dim_8"
+        android:paddingRight="@dimen/dim_8"
+        android:singleLine="true"
+        android:textSize="@dimen/universal_text_size12"
+        android:background="@drawable/et_background_shape"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReferralNote"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_marginTop="@dimen/dim_4"
+        android:layout_marginStart="@dimen/dim_4"
+        android:layout_marginBottom="@dimen/dim_4"
+        android:layout_marginEnd="@dimen/dim_4"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/audiowide_regular"
+        android:text="@string/btn_apply_text"
+        android:textAllCaps="false"
+        android:textSize="@dimen/universal_text_size12"
+        android:textColor="@color/white" />
+
+
+
+
+</RelativeLayout>

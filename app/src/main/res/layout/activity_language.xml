@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_lang"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_100"
+        android:visibility="visible"
+        android:layout_margin="@dimen/dim_30"
+        android:src="@drawable/logo"/>
+
+    <RelativeLayout
+        android:id="@+id/rlFrame"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/dim_80"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlFrame"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/select_language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dim_20"
+        android:layout_marginStart="@dimen/dim_50"
+        android:layout_marginEnd="@dimen/dim_50"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/dim_4"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_eng_text"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size14"
+                android:fontFamily="@font/audiowide_regular"
+                android:background="@drawable/btn_background_white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_4"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_hindi_text"
+                android:textSize="@dimen/universal_text_size14"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/audiowide_regular"
+                android:background="@drawable/btn_background_white"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

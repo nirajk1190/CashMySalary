@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shadows">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_24"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:text="@string/existing_loan_toolbar_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_24"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/add_info_note"
+            android:lineSpacingExtra="@dimen/dim_4"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etLinkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLinkedIn"
+            android:layout_marginTop="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsanslight"
+            android:hint="@string/hint_enter_linkedin"
+            android:paddingStart="@dimen/dim_0"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFacebook"
+            android:layout_marginTop="@dimen/dim_12"
+            android:fontFamily="@font/sinkinsanslight"
+            android:hint="@string/hint_enter_facebook"
+            android:paddingStart="@dimen/dim_0"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <RelativeLayout
+            android:id="@+id/rlVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_12"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvVehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sinkinsanslight"
+                android:justificationMode="inter_word"
+                android:text="@string/header_vehicle_status"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+
+            <RadioGroup
+                android:id="@+id/rgVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvVehicle"
+                android:layout_marginTop="@dimen/dim_8"
+                android:layout_marginBottom="@dimen/dim_8"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rvTwoWheeler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:textSize="@dimen/universal_text_size12"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="true"
+                    android:text="@string/rb_two_wheeler" />
+
+                <RadioButton
+                    android:id="@+id/fourWheeler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:textSize="@dimen/universal_text_size12"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/rb_four_wheeler" />
+
+
+                <RadioButton
+                    android:id="@+id/none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:textSize="@dimen/universal_text_size12"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/rb_none" />
+
+            </RadioGroup>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlUploadRC"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dim_12"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvUploadRC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:justificationMode="inter_word"
+                    android:text="@string/add_info_rc_copy"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_150"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_below="@+id/tvUploadRC">
+
+                    <ImageView
+                        android:id="@+id/ivUploadRC"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_150"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:foregroundGravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:background="@color/shadows"/>
+
+                    <ImageView
+                        android:id="@+id/ivUploadRCCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dim_8"
+                        android:foregroundGravity="center_vertical"
+                        android:scaleType="fitCenter"
+                        android:padding="@dimen/dim_12"
+                        android:background="@drawable/oval_red"
+                        android:src="@drawable/ic_camera_alt_black_24dp">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_bottom_review" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

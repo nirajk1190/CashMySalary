@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_lang"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlFrame"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_250"
+            android:layout_margin="@dimen/dim_12"
+            android:visibility="visible"
+            android:src="@drawable/applied_success"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlFrame"
+        android:paddingBottom="@dimen/dim_50"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dim_32"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:text="@string/applied_loan_success"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size16" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/dim_200"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlContent"
+        android:layout_marginEnd="@dimen/dim_12"
+        android:layout_marginTop="@dimen/dim_24"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/dim_24"
+        android:paddingEnd="@dimen/dim_24"
+        android:text="@string/next"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/universal_text_size14"
+        android:fontFamily="@font/audiowide_regular"
+        android:background="@drawable/btn_background_white"/>
+
+</RelativeLayout>

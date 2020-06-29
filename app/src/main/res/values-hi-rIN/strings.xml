@@ -1,0 +1,82 @@
+<resources>
+    <string name="fb_app_id">208459577239282</string>
+    <string name="app_name">Cash My Salary</string>
+    <string name="btn_eng_text">English</string>
+    <string name="btn_hindi_text">हिन्दी</string>
+    <string name="btn_login_text">लॉग इन करें</string>
+    <string name="btn_verify_text">सत्यापित करें</string>
+    <string name="btn_lets_go_text">ठीक चलो चलते हैं</string>
+    <string name="tv_forgot_password">पासवर्ड भूल गए?</string>
+    <string name="tv_connect_with">-----------  या साथ लॉगिन करें  -----------</string>
+    <string name="next">आगे</string>
+    <string name="skip">छोड़ें</string>
+    <string name="start">समझ गया</string>
+    <string name="slide_1_desc">अब ऋण प्राप्त करना आपकी उंगलियों पर है</string>
+    <string name="btn_generate_otp_text">ओटीपी प्राप्त करें</string>
+    <string name="btn_regenerate_otp_text">ओटीपी पुनः भेजें</string>
+    <string name="slide_2_desc">तुरंत ऋण स्वीकृति और वितरण प्राप्त करें</string>
+
+    <string name="slide_3_desc">कोई कागजी कार्रवाई नहीं</string>
+    <string name="accept_text">मैं CashmySalary के सहमत हूं <font color='#dd1f25'>T&amp;C</font> &amp; मेरे क्रेडिट रिपोर्ट को पुनः प्राप्त करने के लिए CashmySalary को अधिकृत करें</string>
+
+    <string name="et_phone_hint">फ़ोन नंबर</string>
+    <string name="et_password_hint">ओटीपी दर्ज करें</string>
+    <string name="sign_in_with_google">गूगल</string>
+    <string name="sign_in_with_fb">फेसबुक</string>
+    <string name="permission_act_toolbar_title">अनुमति</string>
+    <string name="enter_otp_text">अपने मोबाइल फोन पर भेजे गए ओटीपी को दर्ज करें</string>
+    <string name="enter_number_text">अपना पंजीकृत मोबाइल नंबर, या वह नंबर जिसके साथ आप हमारे साथ पंजीकरण करना चाहते हैं, दर्ज करें</string>
+    <string name="enter_number_text2">अपना पंजीकृत मोबाइल नंबर दर्ज करें</string>
+    <string name="permission_content">अपनी पात्रता का आकलन करने और अपने ऋण की तीव्र संवृद्धि की सुविधा के लिए, हमें आपके कैमरा, संपर्क, स्थान, फ़ोन, संग्रहण और एसएमएस तक पहुँचने के लिए अनुमतियों की आवश्यकता है।</string>
+    <string name="home_text">घर</string>
+    <string name="getloan_text">Get Loan</string>
+    <string name="payment_text">Payment</string>
+    <string name="profile_text">My Profile</string>
+
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_document">My Document</string>
+    <string name="menu_loan">Loan Record</string>
+    <string name="menu_track">Track Application</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_invite">Invite a friend</string>
+    <string name="menu_terms">T&amp;C / Privacy policy</string>
+    <string name="menu_aboutUs">About Us</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_contactUs">Contact Us</string>
+    <string name="menu_logOut">Log out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="profile_act_toolbar_title">Profile</string>
+    <string name="payment_amount">Payment amount :</string>
+    <string name="select_payment">Select a payment method</string>
+    <string name="how_much_cash">Loan Amount:</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>My Document</item>
+        <item>Loan Record</item>
+        <item>Track Application</item>
+        <item>Language</item>
+        <item>Notifications</item>
+        <item>Invite a friend</item>
+        <item>T&amp;C / Privacy policy</item>
+        <item>About Us</item>
+        <item>FAQ</item>
+        <item>Contact Us</item>
+        <item>Log out</item>
+    </string-array>
+</resources>

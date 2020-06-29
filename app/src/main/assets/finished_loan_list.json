@@ -1,0 +1,13 @@
+{
+  "fields": [
+    {
+      "id": 0,
+      "loanId": "200318020014379656",
+      "status": "Paid",
+      "loanAmount": 3000,
+      "repaymentAmt": 3000,
+      "paidAmount": 3500,
+      "dueDate": "01 July 2020"
+    }
+  ]
+}

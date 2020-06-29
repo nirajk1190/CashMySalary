@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dim_8">
+
+
+        <RelativeLayout
+            android:id="@+id/rlHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_4"
+            android:padding="@dimen/dim_4">
+
+            <TextView
+                android:id="@+id/tvLoanAmtHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sinkinsanslight"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:paddingStart="@dimen/dim_8"
+                android:text="@string/loan_id_heading"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+            <TextView
+                android:id="@+id/tvLoanId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLoanAmtHeader"
+                android:layout_marginTop="@dimen/dim_4"
+                android:fontFamily="@font/sinkinsans600semibold"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:paddingStart="@dimen/dim_8"
+                android:text="@string/loan_id"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/universal_text_size12" />
+
+
+            <TextView
+                android:id="@+id/tvLoanStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:background="@drawable/over_due_background"
+                android:fontFamily="@font/sinkinsans600semibold"
+                android:justificationMode="inter_word"
+                android:paddingStart="@dimen/dim_24"
+                android:paddingTop="@dimen/dim_8"
+                android:paddingEnd="@dimen/dim_24"
+                android:paddingBottom="@dimen/dim_8"
+                android:text="Due"
+                android:textColor="@color/white"
+                android:textSize="@dimen/universal_text_size12"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_0.5"
+            android:layout_below="@+id/rlHeading"
+            android:layout_marginStart="@dimen/dim_8"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:background="@color/shadows" />
+
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_marginTop="@dimen/dim_8">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:layout_centerHorizontal="true"
+                    android:justificationMode="inter_word"
+                    android:paddingStart="@dimen/dim_8"
+                    android:text="@string/loan_amt_heading"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/tvLm"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:lineSpacingExtra="@dimen/dim_6"
+                    android:fontFamily="@font/sinkinsanslight"
+                    android:layout_centerHorizontal="true"
+                    android:justificationMode="inter_word"
+                    android:paddingStart="@dimen/dim_8"
+                    android:text="@string/loan_amt_heading1"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+                <TextView
+                    android:id="@+id/tvLoanAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/sinkinsans600semibold"
+                    android:justificationMode="inter_word"
+                    android:text="@string/loan_amount_txt"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/universal_text_size12" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dim_0.5"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dim_4"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:background="@color/shadows" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="@dimen/dim_6"
+                        android:paddingStart="@dimen/dim_8"
+                        android:text="@string/due_today_heading"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="@dimen/dim_6"
+                        android:paddingStart="@dimen/dim_8"
+                        android:text="@string/due_today_heading1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <TextView
+                        android:id="@+id/tvDueToday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLoanAmtHeader"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_24"
+                        android:fontFamily="@font/sinkinsans600semibold"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="@string/loan_amount_txt"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dim_0.5"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dim_4"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:background="@color/shadows" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:paddingStart="@dimen/dim_8"
+                        android:text="@string/repayment_date_heading"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <TextView
+                        android:id="@+id/tvRepaymentDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/sinkinsans600semibold"
+                        android:gravity="start|center_horizontal"
+                        android:justificationMode="inter_word"
+                        android:text="01 July 2020"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dim_0.5"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dim_4"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:background="@color/shadows" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPayable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:gravity="center_horizontal"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="@dimen/dim_6"
+                        android:text="@string/repayment_amt_heading"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tvPayable"
+                        android:layout_marginTop="@dimen/dim_4"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/repayment_amt_heading1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <TextView
+                        android:id="@+id/tvRepaymentAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLoanAmtHeader"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_24"
+                        android:fontFamily="@font/sinkinsans600semibold"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="@string/loan_amount_txt"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_30"
+            android:layout_below="@+id/llContent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="@dimen/dim_24"
+            android:layout_marginEnd="@dimen/dim_8"
+            android:background="@drawable/button_background_fill_border"
+            android:drawableStart="@drawable/ic_check_circle_green_24dp"
+            android:drawablePadding="@dimen/dim_8"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/audiowide_regular"
+            android:paddingStart="@dimen/dim_8"
+            android:paddingEnd="@dimen/dim_8"
+            android:text="@string/btn_pay_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size14"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+</FrameLayout>

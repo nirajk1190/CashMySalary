@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "title": "Storage",
+      "description": "Allow you to upload documents and pictures for loan application"
+    },
+    {
+      "title": "Camera",
+      "description": "Allow you to capture images of documents and pictures for loan application"
+    },
+    {
+      "title": "SMS",
+      "description": "Read SMS to evaluate your credit history"
+    },
+    {
+      "title": "Location",
+      "description": "Collect and monitor your device location to provide service ability of your loan application and customized offers"
+    },
+    {
+      "title": "Contacts",
+      "description": "Collect contact information to detect references and auto-fill the data during your loan application"
+    },
+    {
+      "title": "Phone",
+      "description": "Collect hardware information, OS and version, unique device identifier, wifi and mobile network information, profile information to prevent fraud by uniquely identifying the devices and restricting unauthorized devices to act on your behalf"
+    },
+    {
+      "title": "Installed Application",
+      "description": "Collect list of apps installed on your device for credit profile enrichment"
+    }
+  ]
+}

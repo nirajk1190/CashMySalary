@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_grey_with_red"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlFrame"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="@dimen/dim_12"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_250"
+            android:layout_margin="@dimen/dim_12"
+            android:visibility="visible"
+            android:src="@drawable/congratulations"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlFrame"
+        android:paddingBottom="@dimen/dim_24"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/your_loan"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size16" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeading"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:text="@string/loan_amount_txt"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/universal_text_size22" />
+
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAmount"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/dim_8"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:text="@string/loan_status"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size22" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/dim_150"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_24"
+        android:layout_marginBottom="@dimen/dim_8"
+        android:paddingStart="@dimen/dim_24"
+        android:paddingEnd="@dimen/dim_24"
+        android:text="@string/btn_next_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/universal_text_size14"
+        android:fontFamily="@font/audiowide_regular"
+        android:background="@drawable/btn_background_red"/>
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:lineSpacingExtra="@dimen/dim_4"
+        android:layout_below="@+id/btnNext"
+        android:layout_margin="@dimen/dim_8"
+        android:fontFamily="@font/sinkinsanslight"
+        android:justificationMode="inter_word"
+        android:text="@string/credit_note"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/universal_text_size12" />
+</RelativeLayout>

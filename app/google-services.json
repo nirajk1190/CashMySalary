@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "367032609672",
+    "firebase_url": "https://cashmysalary-18a65.firebaseio.com",
+    "project_id": "cashmysalary-18a65",
+    "storage_bucket": "cashmysalary-18a65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367032609672:android:88e00b5b9eb59d2550a83d",
+        "android_client_info": {
+          "package_name": "com.cashmysalary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367032609672-a7dd039ev7fop31cm5d81vmqrv42a08o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cashmysalary",
+            "certificate_hash": "7a6764104cfd2bee1ff728af7ce5900a46d6fcf3"
+          }
+        },
+        {
+          "client_id": "367032609672-mgric2ru2d36f7aevsdh6m202bn07bcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH13T_dp3qVlx7w6QAXgsQW-lviVw2Zx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367032609672-mgric2ru2d36f7aevsdh6m202bn07bcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

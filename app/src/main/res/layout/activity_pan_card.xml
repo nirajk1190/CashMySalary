@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shadows">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sinkinsanslight"
+            android:layout_marginStart="@dimen/dim_24"
+            android:justificationMode="inter_word"
+            android:text="@string/take_pan_card"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_close"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim_12"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rlHeader"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:layout_marginTop="@dimen/dim_24"
+        android:background="@color/shadows">
+
+        <ImageView
+            android:id="@+id/ivPanCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_300"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center_vertical"
+            android:scaleType="fitXY"
+            android:background="@color/shadows"/>
+
+        <ImageView
+            android:id="@+id/ivPanCardCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dim_8"
+            android:foregroundGravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/dim_12"
+            android:background="@drawable/oval_red"
+            android:src="@drawable/ic_camera_alt_black_24dp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_bottom_button" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

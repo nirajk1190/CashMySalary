@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btnNext"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rlBasic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/rlBasicHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@color/shadows"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:paddingTop="@dimen/dim_12"
+                    android:paddingEnd="@dimen/dim_8"
+                    android:paddingBottom="@dimen/dim_8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/header_basic"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/universal_text_size12" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlBasicHeader"
+                    android:layout_marginLeft="@dimen/dim_8"
+                    android:layout_marginTop="@dimen/dim_12"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/tvFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/header_first_name"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <EditText
+                        android:id="@+id/etFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvFirstName"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:hint="@string/hint_first_name"
+                        android:paddingStart="@dimen/dim_0"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlMiddleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlFirstName"
+                    android:layout_margin="@dimen/dim_8"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/tvMiddleName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/header_middle_name"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <EditText
+                        android:id="@+id/etMiddleName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvMiddleName"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:hint="@string/hint_middle_name"
+                        android:paddingStart="@dimen/dim_0"
+                        android:textSize="@dimen/universal_text_size14" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlMiddleName"
+                    android:layout_margin="@dimen/dim_8"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/header_last_name"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <EditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLastName"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:hint="@string/hint_last_name"
+                        android:paddingStart="@dimen/dim_0"
+                        android:textSize="@dimen/universal_text_size14" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rldob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlLastName"
+                    android:layout_margin="@dimen/dim_8"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvdob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:justificationMode="inter_word"
+                            android:text="@string/header_dob"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/universal_text_size12" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_calender" />
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/etdob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dob"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:hint="@string/hint_dob"
+                        android:paddingStart="@dimen/dim_0"
+                        android:textSize="@dimen/universal_text_size14" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rldob"
+                    android:layout_margin="@dimen/dim_8"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/header_gender"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <RadioGroup
+                        android:id="@+id/rgGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvGender"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rvMale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:textSize="@dimen/universal_text_size12"
+                            android:buttonTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:text="@string/male" />
+
+                        <RadioButton
+                            android:id="@+id/rvFemale"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:textSize="@dimen/universal_text_size12"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/colorPrimary"
+                            android:text="@string/female" />
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlMarital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlGender"
+                    android:layout_margin="@dimen/dim_8"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvMarital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/header_marital"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <RadioGroup
+                        android:id="@+id/rgMarital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvMarital"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rvMarried"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:textSize="@dimen/universal_text_size12"
+                            android:buttonTint="@color/colorPrimary"
+                            android:checked="true"
+                            android:text="@string/married" />
+
+                        <RadioButton
+                            android:id="@+id/rvUnmarried"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/sinkinsanslight"
+                            android:textSize="@dimen/universal_text_size12"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/colorPrimary"
+                            android:text="@string/unmarried" />
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlEdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlMarital"
+                    android:layout_margin="@dimen/dim_8"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvEdu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:justificationMode="inter_word"
+                        android:text="@string/header_edu_qualification"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/universal_text_size12" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spinnerEducation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sinkinsanslight"
+                        android:layout_below="@+id/tvEdu"
+                        android:textSize="@dimen/universal_text_size14"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/select_edu"
+                        android:textColorHint="@color/colorAccent"
+                        app:met_floatingLabel="normal" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="@dimen/dim_24"
+        android:paddingEnd="@dimen/dim_24"
+        android:text="@string/btn_next_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/universal_text_size12"
+        android:fontFamily="@font/audiowide_regular"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>
